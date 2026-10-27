@@ -1,0 +1,353 @@
+{
+  "status": "passed",
+  "report": "reports/client_report.md",
+  "report_sha256": "fd786e32ce04ddeaf3f5249402e77f09bf2caa05b379eac1a10e5b024071e396",
+  "sections": [
+    "الملخص التنفيذي",
+    "المشكلة التجارية",
+    "نظرة عامة على الطلب",
+    "أين يتركّز الطلب؟",
+    "مراكز التوزيع",
+    "الترويج والتسعير",
+    "مخاطر تخطيط المخزون",
+    "التنبؤ بالطلب",
+    "التوصيات",
+    "حدود النتائج",
+    "الخلاصة الإدارية"
+  ],
+  "executive_statements": 4,
+  "recommendations": 4,
+  "chart_references": [
+    "reports/figures/weekly_demand.png",
+    "reports/figures/category_pareto.png",
+    "reports/figures/center_demand.png",
+    "reports/figures/promotion_comparison.png",
+    "reports/figures/discount_demand.png",
+    "reports/figures/demand_volume_volatility.png"
+  ],
+  "validated_source_claims": 37,
+  "numeric_occurrences_checked": 53,
+  "numerical_claim_map": [
+    {
+      "claim": "Total observed orders",
+      "source": "phase7/kpi_results.json:total_orders",
+      "source_value": 119557485,
+      "display": "119,557,485",
+      "occurrences": 1
+    },
+    {
+      "claim": "Rounded average weekly demand",
+      "source": "phase7/kpi_results.json:average_weekly_demand",
+      "source_value": 824534.3793103448,
+      "display": "824,534",
+      "occurrences": 1
+    },
+    {
+      "claim": "Peak orders",
+      "source": "phase6/eda_results.json:weekly_summary/peak",
+      "source_value": 1303457,
+      "display": "1,303,457",
+      "occurrences": 1
+    },
+    {
+      "claim": "Peak week",
+      "source": "phase6/eda_results.json:weekly_summary/peak/week",
+      "source_value": 48,
+      "display": "48",
+      "occurrences": 1
+    },
+    {
+      "claim": "Trough orders",
+      "source": "phase6/eda_results.json:weekly_summary/trough",
+      "source_value": 380065,
+      "display": "380,065",
+      "occurrences": 1
+    },
+    {
+      "claim": "Trough week",
+      "source": "phase6/eda_results.json:weekly_summary/trough/week",
+      "source_value": 62,
+      "display": "62",
+      "occurrences": 1
+    },
+    {
+      "claim": "Observed first week",
+      "source": "phase6/eda_results.json:weekly/first/week",
+      "source_value": 1,
+      "display": "1",
+      "occurrences": 1
+    },
+    {
+      "claim": "Observed last week",
+      "source": "phase6/eda_results.json:weekly/last/week",
+      "source_value": 145,
+      "display": "145",
+      "occurrences": 2
+    },
+    {
+      "claim": "Category demand share",
+      "source": "phase6/eda_results.json:categories/selected_share_pct",
+      "source_value": 81.39969321034145,
+      "display": "81.40%",
+      "occurrences": 2
+    },
+    {
+      "claim": "Meal threshold count",
+      "source": "phase6/eda_results.json:meals/threshold_count",
+      "source_value": 22,
+      "display": "22",
+      "occurrences": 1
+    },
+    {
+      "claim": "Meal demand share",
+      "source": "phase6/eda_results.json:meals/selected_share_pct",
+      "source_value": 81.18179050019327,
+      "display": "81.18%",
+      "occurrences": 1
+    },
+    {
+      "claim": "Leading center ID",
+      "source": "phase6/eda_results.json:centers/volume_leader/center_id",
+      "source_value": "13",
+      "display": "13",
+      "occurrences": 3
+    },
+    {
+      "claim": "Leading center orders",
+      "source": "phase6/eda_results.json:centers/volume_leader/orders",
+      "source_value": 4296545,
+      "display": "4,296,545",
+      "occurrences": 2
+    },
+    {
+      "claim": "email observed contrast",
+      "source": "phase8/promotion_results.json:email/percentage_difference",
+      "source_value": 190.21192556422798,
+      "display": "190.21%",
+      "occurrences": 2
+    },
+    {
+      "claim": "email eligible contexts",
+      "source": "phase8/promotion_results.json:email/coverage/eligible_series",
+      "source_value": 2482,
+      "display": "2,482",
+      "occurrences": 1
+    },
+    {
+      "claim": "homepage observed contrast",
+      "source": "phase8/promotion_results.json:homepage/percentage_difference",
+      "source_value": 158.86581338323094,
+      "display": "158.87%",
+      "occurrences": 1
+    },
+    {
+      "claim": "homepage eligible contexts",
+      "source": "phase8/promotion_results.json:homepage/coverage/eligible_series",
+      "source_value": 2432,
+      "display": "2,432",
+      "occurrences": 1
+    },
+    {
+      "claim": "Both flags vs neither common-context contrast",
+      "source": "phase8/promotion_results.json:combined/contrasts/both/percentage_difference",
+      "source_value": 325.2903852711635,
+      "display": "325.29%",
+      "occurrences": 1
+    },
+    {
+      "claim": "Common four-state contexts",
+      "source": "phase8/promotion_results.json:combined/common_four_state_contexts",
+      "source_value": 490,
+      "display": "490",
+      "occurrences": 1
+    },
+    {
+      "claim": "Email flag 0 global mean signed discount percent",
+      "source": "phase8/promotion_results.json:email/overlap/0/discount/mean × 100",
+      "source_value": 4.106836909145575,
+      "display": "4.11%",
+      "occurrences": 2
+    },
+    {
+      "claim": "Email flag 1 global mean signed discount percent",
+      "source": "phase8/promotion_results.json:email/overlap/1/discount/mean × 100",
+      "source_value": 23.978853922473043,
+      "display": "23.98%",
+      "occurrences": 2
+    },
+    {
+      "claim": "Priority meals",
+      "source": "phase9/inventory_segments.json:priority_meal_ids/length",
+      "source_value": 14,
+      "display": "14",
+      "occurrences": 3
+    },
+    {
+      "claim": "Priority demand share",
+      "source": "phase9/inventory_segments.json:segment_summary/high-high/demand_share_pct",
+      "source_value": 45.93492159859335,
+      "display": "45.93%",
+      "occurrences": 3
+    },
+    {
+      "claim": "Priority meal ID",
+      "source": "phase9/inventory_segments.json:priority_meal_ids/top-five",
+      "source_value": "2290",
+      "display": "2290",
+      "occurrences": 1
+    },
+    {
+      "claim": "Priority meal 2290 orders",
+      "source": "phase9/inventory_segments.json:meals/2290/orders",
+      "source_value": 9770303,
+      "display": "9,770,303",
+      "occurrences": 1
+    },
+    {
+      "claim": "Priority meal ID",
+      "source": "phase9/inventory_segments.json:priority_meal_ids/top-five",
+      "source_value": "1754",
+      "display": "1754",
+      "occurrences": 1
+    },
+    {
+      "claim": "Priority meal 1754 orders",
+      "source": "phase9/inventory_segments.json:meals/1754/orders",
+      "source_value": 6818059,
+      "display": "6,818,059",
+      "occurrences": 1
+    },
+    {
+      "claim": "Priority meal ID",
+      "source": "phase9/inventory_segments.json:priority_meal_ids/top-five",
+      "source_value": "1109",
+      "display": "1109",
+      "occurrences": 1
+    },
+    {
+      "claim": "Priority meal 1109 orders",
+      "source": "phase9/inventory_segments.json:meals/1109/orders",
+      "source_value": 6367773,
+      "display": "6,367,773",
+      "occurrences": 1
+    },
+    {
+      "claim": "Priority meal ID",
+      "source": "phase9/inventory_segments.json:priority_meal_ids/top-five",
+      "source_value": "1971",
+      "display": "1971",
+      "occurrences": 1
+    },
+    {
+      "claim": "Priority meal 1971 orders",
+      "source": "phase9/inventory_segments.json:meals/1971/orders",
+      "source_value": 5728620,
+      "display": "5,728,620",
+      "occurrences": 1
+    },
+    {
+      "claim": "Priority meal ID",
+      "source": "phase9/inventory_segments.json:priority_meal_ids/top-five",
+      "source_value": "1727",
+      "display": "1727",
+      "occurrences": 1
+    },
+    {
+      "claim": "Priority meal 1727 orders",
+      "source": "phase9/inventory_segments.json:meals/1727/orders",
+      "source_value": 4735987,
+      "display": "4,735,987",
+      "occurrences": 1
+    },
+    {
+      "claim": "Baseline mean absolute forecast error",
+      "source": "phase10/results.json:metrics/Previous-week baseline/mae",
+      "source_value": 119.61305261875019,
+      "display": "119.61",
+      "occurrences": 2
+    },
+    {
+      "claim": "Selected model mean absolute forecast error",
+      "source": "phase10/results.json:metrics/Random Forest/mae",
+      "source_value": 80.48260829770285,
+      "display": "80.48",
+      "occurrences": 2
+    },
+    {
+      "claim": "Selected model MAE improvement percent",
+      "source": "phase10/results.json:metrics/Random Forest/improvement_pct_vs_baseline",
+      "source_value": 32.714192526939456,
+      "display": "32.71%",
+      "occurrences": 3
+    },
+    {
+      "claim": "Holdout start week",
+      "source": "phase10/results.json:holdout_weeks/first",
+      "source_value": 136,
+      "display": "136",
+      "occurrences": 1
+    }
+  ],
+  "arabic_category_labels": {
+    "Beverages": "المشروبات",
+    "Rice Bowl": "أطباق الأرز",
+    "Sandwich": "الشطائر",
+    "Salad": "السلطات",
+    "Pizza": "البيتزا"
+  },
+  "center_type_translation": {
+    "TYPE_A": "أ",
+    "TYPE_B": "ب"
+  },
+  "visible_language": "Arabic only; image targets use existing filenames and charts are linked rather than embedded",
+  "weak_positive_discount_relationship": "matches saved Phase 8 rho without adding statistical jargon to report",
+  "winning_model": "Random Forest; expressed as selected best forecast in client prose",
+  "raw_sha256_after": {
+    "fulfilment_center_info.csv": "c874f74fa392b2c4dd24a167f32a5bee68a444b8bf151acf295cd5d66aa0517f",
+    "meal_info.csv": "9d8045af391c492f531c928d7f3d58581c80d0594776d1f4e53c8b29bbff8f75",
+    "test.csv": "71a929bf2f043bf98748acb9d274258fe4c68c19592be1e26aca7dc1f1c8eda5",
+    "train.csv": "a2ed2d7c6905d63a9361d8dd35bc06c8a597831f7185644e0f33ad7bfe20cc81"
+  },
+  "existing_data_code_tests_notebooks_forecasts_figures": "unchanged",
+  "expensive_analysis_rerun": false,
+  "full_suite_rerun": false,
+  "technical_report_created": false,
+  "phase15": "not started",
+  "meal_info_verification": {
+    "fields": [
+      "meal_id",
+      "category",
+      "cuisine"
+    ],
+    "verified_rows": [
+      {
+        "meal_id": "2290",
+        "category": "Rice Bowl",
+        "cuisine": "Indian"
+      },
+      {
+        "meal_id": "1754",
+        "category": "Sandwich",
+        "cuisine": "Italian"
+      },
+      {
+        "meal_id": "1109",
+        "category": "Rice Bowl",
+        "cuisine": "Indian"
+      },
+      {
+        "meal_id": "1971",
+        "category": "Sandwich",
+        "cuisine": "Italian"
+      },
+      {
+        "meal_id": "1727",
+        "category": "Rice Bowl",
+        "cuisine": "Indian"
+      }
+    ],
+    "specific_meal_names_or_detailed_descriptions": false,
+    "report_action": "Kept IDs; corrected Arabic sentence to state the file contains ID, category and cuisine only.",
+    "raw_sha256": "9d8045af391c492f531c928d7f3d58581c80d0594776d1f4e53c8b29bbff8f75"
+  }
+}

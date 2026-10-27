@@ -1,0 +1,39 @@
+{
+  "status": "pass",
+  "method": "Independent csv.DictReader / math.fsum / scalar quantiles; no risk-module import",
+  "source_rows": 32821,
+  "actual_orders": 7460280,
+  "levels": {
+    "meal": {
+      "groups_verified": 51,
+      "eligible_groups": 51,
+      "rows_conserved": 32821,
+      "orders_conserved": 7460280,
+      "weighted_mae": 80.48260829770284,
+      "all_metrics_and_labels_match": true
+    },
+    "center": {
+      "groups_verified": 77,
+      "eligible_groups": 77,
+      "rows_conserved": 32821,
+      "orders_conserved": 7460280,
+      "weighted_mae": 80.48260829770285,
+      "all_metrics_and_labels_match": true
+    },
+    "meal_center": {
+      "groups_verified": 3547,
+      "eligible_groups": 3136,
+      "rows_conserved": 32821,
+      "orders_conserved": 7460280,
+      "weighted_mae": 80.48260829770284,
+      "all_metrics_and_labels_match": true
+    }
+  },
+  "unchanged_files": 10,
+  "raw_files_unchanged_and_match_inventory": 4,
+  "phase10_outputs_unchanged": true,
+  "figure_png_valid": true,
+  "technical_report_top18_rows_match": true,
+  "directional_pair_claims_verified": true,
+  "scope": "Phase 19 focused checks only; no full suite, notebooks, dashboard or model execution"
+}

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "skills": {
+    "exploratory-data-analysis": {
+      "source": "C:\\Users\\MAHMOU~1\\AppData\\Local\\Temp\\food-demand-phase3-upstream",
+      "sourceType": "local",
+      "computedHash": "b6c8bd8ccfb65cb9b5d702030052efe95c7aa465192081527cb6e85567764625"
+    },
+    "scikit-learn": {
+      "source": "C:\\Users\\MAHMOU~1\\AppData\\Local\\Temp\\food-demand-phase3-upstream",
+      "sourceType": "local",
+      "computedHash": "124b80e65a64ec6b763d0dcf469b8314c3f06ef3065e0b488707f8978085ef25"
+    }
+  }
+}

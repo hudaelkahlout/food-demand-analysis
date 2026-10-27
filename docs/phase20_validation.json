@@ -1,0 +1,109 @@
+{
+  "phase": 20,
+  "audit_status": "executed_with_open_acceptance_items",
+  "fully_complete": false,
+  "checks": {
+    "protected_files_unchanged": true,
+    "raw_files_match_inventory": true,
+    "git_metadata_present": false,
+    "ignore_data_rule_present": true,
+    "requirements_pins_match": {
+      "matplotlib": {
+        "required": "3.11.2",
+        "installed": "3.11.2"
+      },
+      "nbclient": {
+        "required": "0.11.0",
+        "installed": "0.11.0"
+      },
+      "nbformat": {
+        "required": "5.11.1",
+        "installed": "5.11.1"
+      },
+      "ipykernel": {
+        "required": "7.4.0",
+        "installed": "7.4.0"
+      },
+      "ipython": {
+        "required": "9.17.1",
+        "installed": "9.17.1"
+      },
+      "jupyter-client": {
+        "required": "8.10.0",
+        "installed": "8.10.0"
+      },
+      "scipy": {
+        "required": "1.17.1",
+        "installed": "1.17.1"
+      },
+      "numpy": {
+        "required": "2.4.6",
+        "installed": "2.4.6"
+      },
+      "scikit-learn": {
+        "required": "1.9.1",
+        "installed": "1.9.1"
+      },
+      "pandas": {
+        "required": "3.0.3",
+        "installed": "3.0.3"
+      },
+      "streamlit": {
+        "required": "1.66.1",
+        "installed": "1.66.1"
+      }
+    },
+    "pip_check": "No broken requirements found.",
+    "tests": {
+      "command": ".venv/Scripts/python.exe -m unittest discover -s tests -v",
+      "tests_run": 74,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "suite_invocations": 1,
+      "runner_seconds": 1.086,
+      "evidence": "Executed during Phase 20; tool output retained in chat."
+    },
+    "notebooks": {
+      "notebooks/analysis.ipynb": {
+        "code_cells": 16,
+        "stored_errors": 0,
+        "all_stored_executed": true,
+        "rerun_in_phase20": false
+      },
+      "notebooks/machine_learning.ipynb": {
+        "code_cells": 6,
+        "stored_errors": 0,
+        "all_stored_executed": true,
+        "rerun_in_phase20": false
+      }
+    },
+    "historical_evidence": {
+      "docs/phase10_notebook_validation.json": "passed",
+      "docs/phase9_notebook_validation.json": "passed",
+      "docs/phase12_validation.json": "passed",
+      "docs/phase13_validation.json": "passed",
+      "docs/phase14_validation.json": "passed",
+      "docs/phase15_validation.json": "passed",
+      "docs/phase19_validation.json": "pass"
+    },
+    "dashboard_health_current": 200,
+    "final_png_figures": 7,
+    "custom_skills_count": 2,
+    "external_skills_available": true,
+    "presentation": {
+      "path": "presentation/final_presentation.pptx",
+      "slides": 13,
+      "sha256": "aeb7179e1402a047c471f9737da37abff38a36dd23ab2f834b13398498d60b68",
+      "package_layout_font_import_and_native_chart_checks": "passed",
+      "visual_review": "all 13 final slides rendered by LibreOffice and inspected; Arabic direction and priority IDs readable",
+      "powerpoint_native_open_verified": false,
+      "key_numbers_and_priority_ids_present": true
+    },
+    "csv_outside_data": []
+  },
+  "open_items": [
+    "Git tracking/history/publication could not be verified: no .git metadata in this workspace.",
+    "A clean environment installation was not repeated; installed pinned versions and pip check were verified."
+  ]
+}

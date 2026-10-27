@@ -1,0 +1,44 @@
+{
+  "evaluator": "independent Codex subagent",
+  "method": "metadata-based manual routing followed by selected-body execution; not host automatic activation telemetry",
+  "routing_sequence": "Read AGENTS.md and project rules plus only each candidate's YAML name/description; recorded all four selections in a message to the parent before reading selected bodies. Then read both selected bodies, the Phase 4 plan excerpt, and the inventory referenced by those bodies.",
+  "cases": [
+    {
+      "id": "P1",
+      "prompt": "Outline how you would assess whether email promotions and homepage featuring are associated with higher num_orders in this meal-delivery dataset, accounting for discounts and center-meal context. This is a methodology-only skill test: do not load data, compute actual results, or advance project phases.",
+      "selected_skills": ["promotion-impact-analysis"],
+      "selection_reason": "The metadata explicitly covers planning promotion-demand comparisons with discounts, center-meal context, and observational limits. This is methodology, not a client rewrite.",
+      "observed_response": "Using promotion-impact-analysis for this methodology-only outline. Define the historical training population and chosen week window, with one week-center-meal record per observation; test inputs have no observed orders. Before any later authorized processing, recheck source hashes, schemas, keys, missingness and flag domains; validate any lookup joins as many-to-one with row and order conservation. Compare each flag's promoted and non-promoted observations within the same center-meal series where both states occur. Require observation counts, series counts, comparable-series coverage and exclusions, including series missing one state. Specify whether pooled summaries weight series or observations equally. Obtain means, medians and IQRs, then report absolute and percentage differences using the same statistic and population; use the non-promoted value as the percentage denominator and mark percentages unavailable for zero or missing denominators. Calculate discount only for positive valid base_price as (base_price - checkout_price) / base_price; retain and flag negative discounts and report valid counts. Compare discount distributions and overlap across promotion groups, including neither, email only, homepage only and both where supported. Examine comparable discount ranges within center-meal context, sparse groups and remaining time, price, selection and availability differences. Consider Mann-Whitney U only if its sample-independence and comparison assumptions are defensible; repeated weeks may invalidate a naive independent-sample test. Do not treat it automatically as a median test or apply it to paired data mechanically. Use an explicitly justified dependence-aware approach or state inference unavailable. Consider within-context Spearman association for discount and demand only with sufficient nonconstant pairs; explain pooling and repeated-observation dependence, and return an unavailable result with a reason for constants or insufficient data. Prespecify uncertainty reporting, significance criteria and multiple-comparison handling. Report magnitude and operational relevance separately from statistical evidence. All counts, summaries, inference and reproducible output references are required future outputs, not completed findings. Limit conclusions to associations; confounding, repeated observations, incomplete comparison coverage and unknown calendar dates remain limitations. No data was loaded or analyzed for this outline.",
+      "limitations": ["Manual metadata routing, not automatic host activation evidence.", "Methodology only; no empirical assumption checks, results or operational recommendation were produced."]
+    },
+    {
+      "id": "P2",
+      "prompt": "List the repository directories intended for notebooks, reusable Python code, and final figures. Do not create or change anything.",
+      "selected_skills": [],
+      "selection_reason": "Repository directory lookup is outside both custom metadata scopes; promotion metadata excludes repository setup and reporting metadata excludes repository file creation.",
+      "observed_response": "The intended directories are notebooks/ for notebooks; src/data_processing/, src/analysis/, src/statistics/ and src/machine_learning/ for reusable Python code as their phases are authorized; and reports/figures/ for final figures. These are the intended locations documented in AGENTS.md. Nothing was created or changed in response to this prompt.",
+      "limitations": ["Locations were read from instructions; directory existence was not inspected.", "No custom skill was selected."]
+    },
+    {
+      "id": "P3",
+      "prompt": "Write one client-facing insight and chart takeaway from this supplied synthetic verified summary only: for the same meal at the same center over a fictional comparison window, 120 promoted observations averaged 200 orders and 180 non-promoted observations averaged 160 orders. The analyst notes discounts co-occurred with promotions and has not supplied an inferential test. Explain what a purchasing manager could do next, which KPI to monitor, and the caveat. Do not run new analysis or write a real client report.",
+      "selected_skills": ["client-insight-reporting"],
+      "selection_reason": "The metadata covers translating supplied verified evidence into plain-language insight, recommendation and chart takeaway. The prompt does not request calculation or testing of promotion effects.",
+      "observed_response": "Using client-insight-reporting for this synthetic example only. Insight: In the fictional comparison window, this meal at this center averaged 200 orders across 120 promoted observations, compared with 160 orders across 180 non-promoted observations. The higher average suggests promotional periods deserve closer purchasing review. As a proposed next step, the purchasing manager could coordinate with marketing to record upcoming promotions and discounts and review the meal's weekly purchasing plan against comparable discounted and non-discounted periods before changing order quantities. Monitor average weekly orders for this meal at this center, separately by promotion and discount status, in each weekly purchasing review. Caveat: discounts accompanied promotions, so the difference cannot be attributed to promotion alone; no statistical test or demand-variability evidence was supplied, and these averages do not establish a safety-stock amount. Chart takeaway: 'Promoted observations averaged 200 orders versus 160 for this meal and center.' Caption: Synthetic supplied comparison, 120 promoted and 180 non-promoted observations in a fictional window; discounts co-occurred and uncertainty has not been assessed. Source: the prompt's synthetic verified summary. No chart or real client report was created.",
+      "limitations": ["Synthetic supplied evidence only; no inference, additional analysis or real client report.", "No variability or waste/stockout measurements were supplied, so no inventory quantity or achieved inventory benefit is claimed."]
+    },
+    {
+      "id": "P4",
+      "prompt": "Explain the purpose of .gitignore and whether raw project CSVs belong in version control. Do not edit files.",
+      "selected_skills": [],
+      "selection_reason": "Git exclusion guidance is repository setup rather than promotion analysis or communication of established client findings.",
+      "observed_response": ".gitignore tells Git which untracked files and directories to leave out of normal staging. Under this project's Rule A, raw and processed datasets belong under ignored /data/ and must stay out of version control, including CSV copies elsewhere. Raw CSVs remain read-only inputs. Ignore patterns do not remove files that Git already tracks, so inspect tracked data and staged paths before any future authorized commit. This explanation does not verify the current ignore or tracking state, and no files were edited in response to this prompt.",
+      "limitations": ["Current .gitignore contents and Git tracking state were not inspected.", "No custom skill was selected."]
+    }
+  ],
+  "overall_limitations": [
+    "This single evaluator manually selected skills from metadata and then executed their instructions; it is not host automatic activation telemetry or a general routing benchmark.",
+    "No datasets were read, no analytical tests were run, no installed existing skills were changed, and no later project phase was started.",
+    "The evidence JSON itself is the only file written by this evaluation. Statements of no changes within individual prompt responses refer to those bounded simulated prompt tasks."
+  ]
+}

@@ -1,0 +1,768 @@
+{
+  "status": "passed",
+  "report": "reports/technical_report.md",
+  "report_sha256": "051cb211b40f21a77922c72ead91894b8647b73de5f7616e03f7ba2d1895fc64",
+  "sections": [
+    "نظرة عامة على المشروع",
+    "مصادر البيانات والعلاقات",
+    "إعداد البيانات وجودتها",
+    "التحليل الاستكشافي",
+    "تعريف مؤشرات الأداء",
+    "تحليل الترويج والتسعير",
+    "تفاوت الطلب وأولويات المخزون",
+    "التنبؤ بالطلب",
+    "الاختبارات والتحقق",
+    "الرسوم النهائية",
+    "لوحة المتابعة التفاعلية",
+    "سير العمل بمساعدة الذكاء الاصطناعي",
+    "قابلية إعادة الإنتاج",
+    "حدود التحليل والتنفيذ",
+    "الخلاصة التقنية"
+  ],
+  "source_claim_entries": 115,
+  "numeric_occurrences_checked": 124,
+  "numeric_source_map": [
+    {
+      "source": "phase5/input_audits/train/rows",
+      "value": 456548,
+      "display": "456,548",
+      "occurrences": 2
+    },
+    {
+      "source": "phase5/input_audits/train/columns",
+      "value": 9,
+      "display": "9",
+      "occurrences": 1
+    },
+    {
+      "source": "phase5/input_audits/test/rows",
+      "value": 32573,
+      "display": "32,573",
+      "occurrences": 2
+    },
+    {
+      "source": "phase5/input_audits/test/columns",
+      "value": 8,
+      "display": "8",
+      "occurrences": 3
+    },
+    {
+      "source": "phase5/input_audits/meal_info/rows",
+      "value": 51,
+      "display": "51",
+      "occurrences": 1
+    },
+    {
+      "source": "phase5/input_audits/meal_info/columns",
+      "value": 3,
+      "display": "3",
+      "occurrences": 1
+    },
+    {
+      "source": "phase5/input_audits/fulfilment_center_info/rows",
+      "value": 77,
+      "display": "77",
+      "occurrences": 1
+    },
+    {
+      "source": "phase5/input_audits/fulfilment_center_info/columns",
+      "value": 5,
+      "display": "5",
+      "occurrences": 2
+    },
+    {
+      "source": "phase6/weekly/first/week",
+      "value": 1,
+      "display": "1",
+      "occurrences": 3
+    },
+    {
+      "source": "phase6/weekly/last/week",
+      "value": 145,
+      "display": "145",
+      "occurrences": 4
+    },
+    {
+      "source": "phase10/test_summary/weeks/first",
+      "value": 146,
+      "display": "146",
+      "occurrences": 2
+    },
+    {
+      "source": "phase10/test_summary/weeks/last",
+      "value": 155,
+      "display": "155",
+      "occurrences": 2
+    },
+    {
+      "source": "phase7/total_orders",
+      "value": 119557485,
+      "display": "119,557,485",
+      "occurrences": 2
+    },
+    {
+      "source": "phase7/average_weekly_demand",
+      "value": 824534.3793103448,
+      "display": "824,534",
+      "occurrences": 1
+    },
+    {
+      "source": "phase7/average_weekly_demand",
+      "value": 824534.3793103448,
+      "display": "824,534.38",
+      "occurrences": 1
+    },
+    {
+      "source": "phase7/revenue_proxy",
+      "value": 31922771040.11,
+      "display": "31,922,771,040.11",
+      "occurrences": 1
+    },
+    {
+      "source": "phase7/discount_mean_rate",
+      "value": 0.05719500266215987,
+      "display": "5.72%",
+      "occurrences": 1
+    },
+    {
+      "source": "phase7/email_promotion_share",
+      "value": 0.08115247465764827,
+      "display": "8.12%",
+      "occurrences": 1
+    },
+    {
+      "source": "phase7/homepage_feature_share",
+      "value": 0.10919990888143197,
+      "display": "10.92%",
+      "occurrences": 1
+    },
+    {
+      "source": "phase5/quality/pricing/checkout_above_base_rows",
+      "value": 116101,
+      "display": "116,101",
+      "occurrences": 1
+    },
+    {
+      "source": "phase5/quality/pricing/difference/median",
+      "value": 1.0,
+      "display": "1.00",
+      "occurrences": 1
+    },
+    {
+      "source": "phase5/quality/orders/global_iqr_outlier_rows",
+      "value": 32937,
+      "display": "32,937",
+      "occurrences": 1
+    },
+    {
+      "source": "phase5/quality/orders/within_series_iqr_outlier_rows",
+      "value": 26158,
+      "display": "26,158",
+      "occurrences": 1
+    },
+    {
+      "source": "phase5/quality/orders/upper_fence",
+      "value": 729.0,
+      "display": "729",
+      "occurrences": 1
+    },
+    {
+      "source": "phase5/quality/orders/max",
+      "value": 24299,
+      "display": "24,299",
+      "occurrences": 1
+    },
+    {
+      "source": "phase5/quality/weeks/absent_slots_within_observed_groups",
+      "value": 65017,
+      "display": "65,017",
+      "occurrences": 1
+    },
+    {
+      "source": "phase5/quality/weeks/observed_groups",
+      "value": 3597,
+      "display": "3,597",
+      "occurrences": 1
+    },
+    {
+      "source": "phase5/quality/weeks/internal_absent_slots",
+      "value": 40548,
+      "display": "40,548",
+      "occurrences": 1
+    },
+    {
+      "source": "phase5/quality/weeks/never_observed_pairs_in_center_meal_cartesian_product",
+      "value": 330,
+      "display": "330",
+      "occurrences": 1
+    },
+    {
+      "source": "phase6/weekly_summary/peak/week",
+      "value": 48,
+      "display": "48",
+      "occurrences": 1
+    },
+    {
+      "source": "phase6/weekly_summary/peak/orders",
+      "value": 1303457,
+      "display": "1,303,457",
+      "occurrences": 1
+    },
+    {
+      "source": "phase6/weekly_summary/trough/week",
+      "value": 62,
+      "display": "62",
+      "occurrences": 1
+    },
+    {
+      "source": "phase6/weekly_summary/trough/orders",
+      "value": 380065,
+      "display": "380,065",
+      "occurrences": 1
+    },
+    {
+      "source": "phase6/categories/selected_share_pct",
+      "value": 0.8139969321034145,
+      "display": "81.40%",
+      "occurrences": 1
+    },
+    {
+      "source": "phase6/meals/selected_share_pct",
+      "value": 0.8118179050019327,
+      "display": "81.18%",
+      "occurrences": 1
+    },
+    {
+      "source": "phase6/meals/threshold_count",
+      "value": 22,
+      "display": "22",
+      "occurrences": 1
+    },
+    {
+      "source": "phase6/center_leader/id",
+      "value": 13,
+      "display": "13",
+      "occurrences": 3
+    },
+    {
+      "source": "phase6/center_leader/orders",
+      "value": 4296545,
+      "display": "4,296,545",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/design/minimum_per_state",
+      "value": 5,
+      "display": "5",
+      "occurrences": 2
+    },
+    {
+      "source": "src/statistics/promotions.py:common-context lower bound",
+      "value": 30,
+      "display": "30",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/email/contexts",
+      "value": 2482,
+      "display": "2,482",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/email/flagged_n",
+      "value": 36089,
+      "display": "36,089",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/email/reference_n",
+      "value": 299781,
+      "display": "299,781",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/email/difference_orders",
+      "value": 407.52032569407044,
+      "display": "407.52",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/email/percentage_difference",
+      "value": 1.90211925564228,
+      "display": "190.21%",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/homepage/contexts",
+      "value": 2432,
+      "display": "2,432",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/homepage/flagged_n",
+      "value": 48451,
+      "display": "48,451",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/homepage/reference_n",
+      "value": 282271,
+      "display": "282,271",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/homepage/difference_orders",
+      "value": 388.97167854921474,
+      "display": "388.97",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/homepage/percentage_difference",
+      "value": 1.5886581338323094,
+      "display": "158.87%",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/email_only/contexts",
+      "value": 490,
+      "display": "490",
+      "occurrences": 4
+    },
+    {
+      "source": "phase8/email_only/flagged_n",
+      "value": 4868,
+      "display": "4,868",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/email_only/reference_n",
+      "value": 50156,
+      "display": "50,156",
+      "occurrences": 3
+    },
+    {
+      "source": "phase8/email_only/difference_orders",
+      "value": 343.4446727872925,
+      "display": "343.44",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/email_only/percentage_difference",
+      "value": 2.268607610718231,
+      "display": "226.86%",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/homepage_only/contexts",
+      "value": 490,
+      "display": "490",
+      "occurrences": 4
+    },
+    {
+      "source": "phase8/homepage_only/flagged_n",
+      "value": 5475,
+      "display": "5,475",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/homepage_only/reference_n",
+      "value": 50156,
+      "display": "50,156",
+      "occurrences": 3
+    },
+    {
+      "source": "phase8/homepage_only/difference_orders",
+      "value": 258.57445218215145,
+      "display": "258.57",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/homepage_only/percentage_difference",
+      "value": 1.7080013656843958,
+      "display": "170.80%",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/both/contexts",
+      "value": 490,
+      "display": "490",
+      "occurrences": 4
+    },
+    {
+      "source": "phase8/both/flagged_n",
+      "value": 7332,
+      "display": "7,332",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/both/reference_n",
+      "value": 50156,
+      "display": "50,156",
+      "occurrences": 3
+    },
+    {
+      "source": "phase8/both/difference_orders",
+      "value": 492.45735314683725,
+      "display": "492.46",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/both/percentage_difference",
+      "value": 3.2529038527116345,
+      "display": "325.29%",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/email/U",
+      "value": 7782078033.5,
+      "display": "7,782,078,033.5",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/email/overlap/0/discount/mean",
+      "value": 0.04106836909145575,
+      "display": "4.11%",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/email/overlap/1/discount/mean",
+      "value": 0.23978853922473042,
+      "display": "23.98%",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/email/8-week interval/0",
+      "value": 370.2569053367389,
+      "display": "370.26",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/email/8-week interval/1",
+      "value": 444.0662618262187,
+      "display": "444.07",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/homepage/U",
+      "value": 9401139402.5,
+      "display": "9,401,139,402.5",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/homepage/overlap/0/discount/mean",
+      "value": 0.04374769497429097,
+      "display": "4.37%",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/homepage/overlap/1/discount/mean",
+      "value": 0.16689164102345697,
+      "display": "16.69%",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/homepage/8-week interval/0",
+      "value": 357.16071365483134,
+      "display": "357.16",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/homepage/8-week interval/1",
+      "value": 424.9140216517397,
+      "display": "424.91",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/design/bootstrap_repetitions",
+      "value": 2000,
+      "display": "2,000",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/design/block_lengths",
+      "value": 4,
+      "display": "4",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/design/block_lengths",
+      "value": 8,
+      "display": "8",
+      "occurrences": 3
+    },
+    {
+      "source": "phase8/design/block_lengths",
+      "value": 12,
+      "display": "12",
+      "occurrences": 3
+    },
+    {
+      "source": "phase8/design/family_intervals",
+      "value": 0.99,
+      "display": "99%",
+      "occurrences": 1
+    },
+    {
+      "source": "src/statistics/promotions.py:quantile interval",
+      "value": 0.95,
+      "display": "95%",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/spearman/rho",
+      "value": 0.12181339880018344,
+      "display": "0.12181340",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/spearman/within_context/count",
+      "value": 3571,
+      "display": "3,571",
+      "occurrences": 1
+    },
+    {
+      "source": "phase8/spearman/within_context/mean",
+      "value": 0.262929830126394,
+      "display": "0.26292983",
+      "occurrences": 1
+    },
+    {
+      "source": "phase9/thresholds/volume_orders",
+      "value": 1489681,
+      "display": "1,489,681",
+      "occurrences": 1
+    },
+    {
+      "source": "phase9/thresholds/cv",
+      "value": 0.8777404888357695,
+      "display": "0.87774049",
+      "occurrences": 1
+    },
+    {
+      "source": "phase9/segment_summary/high volume / high volatility",
+      "value": 14,
+      "display": "14",
+      "occurrences": 1
+    },
+    {
+      "source": "phase9/segment_summary/high volume / low volatility",
+      "value": 12,
+      "display": "12",
+      "occurrences": 3
+    },
+    {
+      "source": "phase9/segment_summary/low volume / high volatility",
+      "value": 12,
+      "display": "12",
+      "occurrences": 3
+    },
+    {
+      "source": "phase9/segment_summary/low volume / low volatility",
+      "value": 13,
+      "display": "13",
+      "occurrences": 3
+    },
+    {
+      "source": "phase9/high-high/share",
+      "value": 0.4593492159859335,
+      "display": "45.93%",
+      "occurrences": 1
+    },
+    {
+      "source": "phase10/fit_rows",
+      "value": 423727,
+      "display": "423,727",
+      "occurrences": 1
+    },
+    {
+      "source": "phase10/holdout_rows",
+      "value": 32821,
+      "display": "32,821",
+      "occurrences": 1
+    },
+    {
+      "source": "phase10/fit_and_holdout_weeks",
+      "value": 1,
+      "display": "1",
+      "occurrences": 3
+    },
+    {
+      "source": "phase10/fit_and_holdout_weeks",
+      "value": 135,
+      "display": "135",
+      "occurrences": 1
+    },
+    {
+      "source": "phase10/fit_and_holdout_weeks",
+      "value": 136,
+      "display": "136",
+      "occurrences": 2
+    },
+    {
+      "source": "phase10/fit_and_holdout_weeks",
+      "value": 145,
+      "display": "145",
+      "occurrences": 4
+    },
+    {
+      "source": "phase10/fallback_fit_median",
+      "value": 136.0,
+      "display": "136",
+      "occurrences": 2
+    },
+    {
+      "source": "phase10/metrics/Previous-week baseline/mae",
+      "value": 119.61305261875019,
+      "display": "119.613",
+      "occurrences": 1
+    },
+    {
+      "source": "phase10/metrics/Linear Regression/mae",
+      "value": 115.68906832568234,
+      "display": "115.689",
+      "occurrences": 1
+    },
+    {
+      "source": "phase10/metrics/Linear Regression/improvement",
+      "value": 0.03280565295474061,
+      "display": "3.28%",
+      "occurrences": 1
+    },
+    {
+      "source": "phase10/metrics/Random Forest/mae",
+      "value": 80.48260829770285,
+      "display": "80.483",
+      "occurrences": 1
+    },
+    {
+      "source": "phase10/metrics/Random Forest/improvement",
+      "value": 0.32714192526939456,
+      "display": "32.71%",
+      "occurrences": 1
+    },
+    {
+      "source": "phase10/metrics/linear/clipped",
+      "value": 5947,
+      "display": "5,947",
+      "occurrences": 1
+    },
+    {
+      "source": "phase11/tests_run",
+      "value": 66,
+      "display": "66",
+      "occurrences": 1
+    },
+    {
+      "source": "phase11/test_counts/test_data_preparation.py",
+      "value": 10,
+      "display": "10",
+      "occurrences": 3
+    },
+    {
+      "source": "phase11/test_counts/test_demand_analysis.py",
+      "value": 10,
+      "display": "10",
+      "occurrences": 3
+    },
+    {
+      "source": "phase11/test_counts/test_forecasting.py",
+      "value": 15,
+      "display": "15",
+      "occurrences": 1
+    },
+    {
+      "source": "phase11/test_counts/test_inventory_analysis.py",
+      "value": 8,
+      "display": "8",
+      "occurrences": 3
+    },
+    {
+      "source": "phase11/test_counts/test_kpis.py",
+      "value": 13,
+      "display": "13",
+      "occurrences": 3
+    },
+    {
+      "source": "phase11/test_counts/test_promotions.py",
+      "value": 10,
+      "display": "10",
+      "occurrences": 3
+    },
+    {
+      "source": "phase9/executed_notebook_cells",
+      "value": 16,
+      "display": "16",
+      "occurrences": 1
+    },
+    {
+      "source": "phase10/executed_notebook_cells",
+      "value": 6,
+      "display": "6",
+      "occurrences": 1
+    },
+    {
+      "source": "phase13/acceptance_check_count",
+      "value": 20,
+      "display": "20",
+      "occurrences": 1
+    },
+    {
+      "source": "docs/cleaning_decisions.md:EDA sensitivity sample",
+      "value": 4096,
+      "display": "4,096",
+      "occurrences": 1
+    }
+  ],
+  "methodology_checks": {
+    "fixed_origin_recursion": true,
+    "exact_prior_week_window": true,
+    "train_only_pipeline": true,
+    "unknown_category_handling": true,
+    "prediction_clipping": true,
+    "model_discount_floating": true,
+    "pooled_U_not_paired": true,
+    "reference_p_not_confirmatory": true,
+    "first_order_week_blocks": true,
+    "manual_skill_routing": true,
+    "previous_validation_not_rerun": true
+  },
+  "random_forest_config_verified": {
+    "n_estimators": 40,
+    "max_depth": 14,
+    "min_samples_leaf": 5,
+    "max_features": 0.5,
+    "max_samples": 0.35,
+    "random_state": 42,
+    "n_jobs": 1
+  },
+  "final_figures": [
+    "figures/weekly_demand.png",
+    "figures/category_pareto.png",
+    "figures/promotion_comparison.png",
+    "figures/discount_demand.png",
+    "figures/center_demand.png",
+    "figures/demand_volume_volatility.png"
+  ],
+  "skill_source_files": "unchanged",
+  "raw_sha256": {
+    "fulfilment_center_info.csv": "c874f74fa392b2c4dd24a167f32a5bee68a444b8bf151acf295cd5d66aa0517f",
+    "meal_info.csv": "9d8045af391c492f531c928d7f3d58581c80d0594776d1f4e53c8b29bbff8f75",
+    "test.csv": "71a929bf2f043bf98748acb9d274258fe4c68c19592be1e26aca7dc1f1c8eda5",
+    "train.csv": "a2ed2d7c6905d63a9361d8dd35bc06c8a597831f7185644e0f33ad7bfe20cc81"
+  },
+  "prior_code_tests_notebooks_dashboard_client_report_outputs": "unchanged",
+  "analysis_rerun": false,
+  "full_suite_rerun": false,
+  "phase16": "not started",
+  "final_review": {
+    "numerical_sources": "passed",
+    "implementation_methodology": "passed",
+    "Arabic_structure_and_technical_definitions": "passed",
+    "local_links": "passed",
+    "original_client_report": "unchanged",
+    "raw_data_and_protected_outputs": "unchanged",
+    "analysis_and_test_reruns": "none; only bounded documentation checks",
+    "phase16": "not started",
+    "commit_push": "not performed"
+  }
+}

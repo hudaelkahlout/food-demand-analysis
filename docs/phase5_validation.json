@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "rows_independently_verified": 456548,
+  "num_orders_independently_verified": 119557485,
+  "all_original_cells_row_order_and_lookup_attributes": "passed",
+  "merge_conservation": "passed",
+  "exact_pricing_and_global_iqr_counts": "passed",
+  "all_center_meal_week_coverage": "passed",
+  "skill_full_row_scans": "passed",
+  "output_hashes": "passed",
+  "git_ignore_probes": 4,
+  "raw_unchanged": true,
+  "phase6_notebook": "absent"
+}

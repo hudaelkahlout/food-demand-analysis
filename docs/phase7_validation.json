@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "independent_method": "SQLite sums, exact integer-cents revenue, floating rate averages, independent sample variance from sums of squares",
+  "scalar_kpis_verified": 6,
+  "meal_cvs_verified": 51,
+  "negative_discounts_preserved": 116101,
+  "revenue_exact_to_cent": true,
+  "discount_tolerance": 1e-12,
+  "cv_relative_tolerance": 1e-12,
+  "notebook_code_cells": 11,
+  "notebook_errors": 0,
+  "raw_and_prepared_inputs": "unchanged",
+  "phase8_tests": "not run"
+}

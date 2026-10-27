@@ -1,0 +1,106 @@
+{
+  "status": "passed",
+  "streamlit_version": "1.66.1",
+  "sections": [
+    "Overview",
+    "Demand",
+    "Centers",
+    "Promotions & Pricing",
+    "Inventory Risk",
+    "Forecasting"
+  ],
+  "acceptance_checks": [
+    "Overview renders",
+    "All six displayed KPIs match Phase 7",
+    "Demand renders",
+    "Centers renders",
+    "Promotions & Pricing renders",
+    "Inventory Risk renders",
+    "All 14 priority rows, volume ordering and CVs match Phase 9",
+    "Forecasting renders",
+    "Model MAEs, winner, 32.71% improvement and download widget match Phase 10",
+    "Demand filters change selected view",
+    "Filtered results reuse Phase 6 function and agree with independent source group totals",
+    "Historical filters persist to Centers",
+    "Center ranking measure switches",
+    "Reset restores full historical scope",
+    "Meal, center-type, cuisine and promotion filters operate together",
+    "Empty historical selection handled without exception",
+    "Historical filters do not alter fixed inventory cohort",
+    "Forecast center, meal and horizon controls operate independently",
+    "Filtered forecast preview/export preserves row order and saved prediction values",
+    "Empty forecast selection handled without exception"
+  ],
+  "acceptance_check_count": 20,
+  "http": {
+    "/_stcore/health": 200,
+    "/": 200
+  },
+  "historical_filter_example": {
+    "source_rows": 456548,
+    "selected_rows": 119,
+    "outside_selection_rows": 456429,
+    "source_orders": 119557485,
+    "selected_orders": 103601,
+    "outside_selection_orders": 119453884,
+    "source_rows_deleted": 0
+  },
+  "forecast_filter_example": {
+    "source_rows": 32573,
+    "selected_rows": 3,
+    "outside_selection_rows": 32570,
+    "source_forecast_orders": 8323117.673955718,
+    "selected_forecast_orders": 5604.570620673541,
+    "outside_selection_forecast_orders": 8317513.103335044,
+    "actual_orders": "unavailable",
+    "source_rows_deleted": 0
+  },
+  "forecast_metadata_alignment": {
+    "rows_before": 32573,
+    "rows_after": 32573,
+    "unique_ids_before": 32573,
+    "unique_ids_after": 32573,
+    "unmatched_metadata": 0,
+    "duplicate_expansion": 0,
+    "row_order_preserved": true,
+    "actual_order_total": "not applicable"
+  },
+  "raw_sha256_before": {
+    "fulfilment_center_info.csv": "c874f74fa392b2c4dd24a167f32a5bee68a444b8bf151acf295cd5d66aa0517f",
+    "meal_info.csv": "9d8045af391c492f531c928d7f3d58581c80d0594776d1f4e53c8b29bbff8f75",
+    "test.csv": "71a929bf2f043bf98748acb9d274258fe4c68c19592be1e26aca7dc1f1c8eda5",
+    "train.csv": "a2ed2d7c6905d63a9361d8dd35bc06c8a597831f7185644e0f33ad7bfe20cc81"
+  },
+  "raw_sha256_after": {
+    "fulfilment_center_info.csv": "c874f74fa392b2c4dd24a167f32a5bee68a444b8bf151acf295cd5d66aa0517f",
+    "meal_info.csv": "9d8045af391c492f531c928d7f3d58581c80d0594776d1f4e53c8b29bbff8f75",
+    "test.csv": "71a929bf2f043bf98748acb9d274258fe4c68c19592be1e26aca7dc1f1c8eda5",
+    "train.csv": "a2ed2d7c6905d63a9361d8dd35bc06c8a597831f7185644e0f33ad7bfe20cc81"
+  },
+  "existing_source_tests_notebooks_figures_forecasts": "unchanged",
+  "model_refitting": false,
+  "expensive_statistical_analysis_rerun": false,
+  "full_suite_rerun": false,
+  "phase14": "not started",
+  "final_documentation_checks": {
+    "local_links": "passed",
+    "syntax_compilation": "passed",
+    "dependency_check": "no broken requirements",
+    "raw_source_notebooks_figures_forecasts": "unchanged",
+    "server_health_reconfirmed": "200 ok",
+    "phase14": "not started",
+    "commit_push": "not performed"
+  },
+  "created_files": [
+    "dashboard/app.py",
+    "dashboard/data.py",
+    "dashboard/README.md",
+    "docs/validate_phase13.py",
+    "docs/phase13_validation.json",
+    "docs/phase13_progress.md"
+  ],
+  "updated_files": [
+    "requirements.txt",
+    "README.md"
+  ]
+}

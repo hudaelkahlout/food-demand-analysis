@@ -1,0 +1,125 @@
+{
+  "phase": 11,
+  "status": "passed",
+  "command": ".venv/Scripts/python.exe -m unittest discover -s tests -v",
+  "suite_invocations": 1,
+  "started_utc": "2026-10-27T13:01:55.204612+00:00",
+  "finished_utc": "2026-10-27T13:02:20.813973+00:00",
+  "exit_code": 0,
+  "tests_run": 66,
+  "runner_seconds": 2.01,
+  "test_counts_by_file": {
+    "test_data_preparation.py": 10,
+    "test_demand_analysis.py": 10,
+    "test_forecasting.py": 15,
+    "test_inventory_analysis.py": 8,
+    "test_kpis.py": 13,
+    "test_promotions.py": 10
+  },
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "raw_sha256_before": {
+    "fulfilment_center_info.csv": "c874f74fa392b2c4dd24a167f32a5bee68a444b8bf151acf295cd5d66aa0517f",
+    "meal_info.csv": "9d8045af391c492f531c928d7f3d58581c80d0594776d1f4e53c8b29bbff8f75",
+    "test.csv": "71a929bf2f043bf98748acb9d274258fe4c68c19592be1e26aca7dc1f1c8eda5",
+    "train.csv": "a2ed2d7c6905d63a9361d8dd35bc06c8a597831f7185644e0f33ad7bfe20cc81"
+  },
+  "raw_sha256_after": {
+    "fulfilment_center_info.csv": "c874f74fa392b2c4dd24a167f32a5bee68a444b8bf151acf295cd5d66aa0517f",
+    "meal_info.csv": "9d8045af391c492f531c928d7f3d58581c80d0594776d1f4e53c8b29bbff8f75",
+    "test.csv": "71a929bf2f043bf98748acb9d274258fe4c68c19592be1e26aca7dc1f1c8eda5",
+    "train.csv": "a2ed2d7c6905d63a9361d8dd35bc06c8a597831f7185644e0f33ad7bfe20cc81"
+  },
+  "raw_matches_phase1_inventory": true,
+  "tests_source_notebooks_requirements_plan_unchanged": true,
+  "protected_file_sha256": {
+    "tests/test_data_preparation.py": "d47ce80d5bc81a2be2936a5489e2f1f5e609db79d69dd0ab099b37e95b8ba721",
+    "tests/test_demand_analysis.py": "a8fd6a963abad75e9c419c5d696a4c486394dfe48241c97b461ea778f3721b7c",
+    "tests/test_forecasting.py": "354a30d42dbae9e9322852744c42e036028fc21d20844e1370c3c7a591ecb0d3",
+    "tests/test_inventory_analysis.py": "38d41bbb4ad46b9cb48b167c82d2d6a1dc7aba60e1b724f67bbb47e743cd9efa",
+    "tests/test_kpis.py": "a48d678ebfb51c0ff2235fccb0aa426141b41749562ad3add321696bad2b9efe",
+    "tests/test_promotions.py": "35cb2305d19da1c2f94d4cdacdbb9ac80268b0c58a7119116d77721da7819797",
+    "src/analysis/demand.py": "05df02333dff56e2945e59e13285ecb140ae40a7610872a796f9775e7ce5ad1c",
+    "src/analysis/inventory.py": "63c09a289c394661e190f93740b00f7d068a603f30c2f913fbeeb3c83c4b7a39",
+    "src/analysis/kpis.py": "9255ee78180bfc945d4a34c09bdcf4bdcc08de55ac33480c48e6d0ae5c869dc5",
+    "src/analysis/plots.py": "0e1d71eda65ef61aa5d915659e95e2fe07dc71aea16b3c8cf61cbedc1c959146",
+    "src/analysis/__init__.py": "53c92dee2a339fbf441813ebe01c2facc9aa86a64ae76bd832477dcb5959f340",
+    "src/data_processing/prepare.py": "24c2898933f28481021e26b279ce94c7de2a644749f388cb30cdb226defbf2d3",
+    "src/data_processing/__init__.py": "b87c9f5165b9db456b857204051d5bfd0a2fbe6dc81bd4e71c9451d4f28a5ddb",
+    "src/machine_learning/forecast.py": "edab4c43725776b92bc9029ab123aedfd95656ad8da7f56807be41ee3a565149",
+    "src/statistics/promotions.py": "1c5352760903a8fbc2f64f8b1a1ec0a11915ae39a9aecf27315928a56421e799",
+    "src/statistics/__init__.py": "844cf1c8424f8cad574208c3969c71017d5bb68df6ec8df2dcb5a1bea9bf01dd",
+    "notebooks/analysis.ipynb": "86a6a3bcc381a70e84742cc07e14268a9d7d1de981ea42c2cda256cb8ebb9f14",
+    "notebooks/machine_learning.ipynb": "51a43e03c1a85e594f25d746600cc718c3c487598568a5f52259cfb3243d238e",
+    "requirements.txt": "12f15e5bcbeedd3bc85b9d9e20a55d74481f88ff4906fc788fc717a574bbd854",
+    "FOOD_DEMAND_ANALYSIS_IMPLEMENTATION_PLAN.md": "d8685f6dc88753fb73b5356bae20cf590c835f97d1a1d061ab72ab04b30aa19b"
+  },
+  "tests_added": 0,
+  "tests_modified": 0,
+  "historical_independent_validation": "reviewed; not rerun in Phase 11",
+  "notebooks": "existing executed artifacts reviewed; not re-executed in Phase 11",
+  "warnings": {
+    "count": 2,
+    "type": "scikit-learn small bootstrap sample in the 15-row forest determinism fixture",
+    "disposition": "Recorded; determinism test passed without changing tests or configuration"
+  },
+  "saved_notebook_artifact_review": {
+    "analysis.ipynb": {
+      "nbformat": "valid",
+      "saved_executed_code_cells": 16,
+      "saved_error_outputs": 0,
+      "reexecuted_in_phase11": false
+    },
+    "machine_learning.ipynb": {
+      "nbformat": "valid",
+      "saved_executed_code_cells": 6,
+      "saved_error_outputs": 0,
+      "reexecuted_in_phase11": false
+    }
+  },
+  "historical_records_reviewed": {
+    "3": {
+      "file": "docs/phase3_validation.json",
+      "recorded_status": "passed",
+      "rerun_in_phase11": false
+    },
+    "5": {
+      "file": "docs/phase5_validation.json",
+      "recorded_status": "passed",
+      "rerun_in_phase11": false
+    },
+    "6": {
+      "file": "docs/phase6_validation.json",
+      "recorded_status": "passed",
+      "rerun_in_phase11": false
+    },
+    "7": {
+      "file": "docs/phase7_validation.json",
+      "recorded_status": "passed",
+      "rerun_in_phase11": false
+    },
+    "8": {
+      "file": "docs/phase8_validation.json",
+      "recorded_status": "passed",
+      "rerun_in_phase11": false
+    },
+    "9": {
+      "file": "docs/phase9_validation.json",
+      "recorded_status": "passed",
+      "rerun_in_phase11": false
+    },
+    "10": {
+      "file": "docs/phase10_validation.json",
+      "recorded_status": "passed",
+      "rerun_in_phase11": false
+    }
+  },
+  "final_documentation_checks": {
+    "local_links": "passed",
+    "test_count_consistency": "passed",
+    "raw_hashes_reconfirmed": "unchanged",
+    "all_protected_files_reconfirmed": "unchanged",
+    "phase12": "not started"
+  }
+}

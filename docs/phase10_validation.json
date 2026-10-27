@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "git_ignore_probes": 4,
+  "independent_mae": {
+    "Previous-week baseline": 119.61305261875019,
+    "Linear Regression": 115.68906832568234,
+    "Random Forest": 80.48260829770284
+  },
+  "fit_rows": 423727,
+  "holdout_rows": 32821,
+  "baseline_recursion": "independently reconstructed",
+  "test_ids_and_order": "exact match",
+  "test_predictions": 32573,
+  "finite_nonnegative": true,
+  "current_future_label_poisoning": "identical features",
+  "raw_and_prepared_hashes": "unchanged",
+  "evaluation_coverage": "all holdout rows; none excluded"
+}

@@ -1,0 +1,36 @@
+# Project datasets and generated data
+/data/
+
+# Protect dataset files accidentally placed elsewhere
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.arrow
+*.xlsx
+*.xls
+*.zip
+*.gz
+
+# Python environments
+.venv/
+venv/
+
+# Python caches
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Node dependencies
+node_modules/
+
+# Temporary chart/build artifacts
+.chart-data-*/
+
+# Environment files
+.env
+
+# OS files
+.DS_Store
+Thumbs.db

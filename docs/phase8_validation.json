@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "context_comparisons_verified": 5,
+  "mann_whitney": "independent frequency-count U and tie-corrected normal reference p",
+  "bootstrap": "all five contrasts, 4/8/12-week blocks independently replicated with scalar draws",
+  "spearman": "global and within-context midranks independently correlated",
+  "discount_overlap": "SQLite counts/averages match",
+  "negative_discounts_unchanged": 116101,
+  "notebook_cells": 14,
+  "notebook_errors": 0,
+  "raw_and_prepared_inputs": "unchanged"
+}

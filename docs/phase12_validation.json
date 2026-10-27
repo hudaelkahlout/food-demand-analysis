@@ -1,0 +1,111 @@
+{
+  "status": "passed",
+  "method": "Independent pandas source aggregations, raw rank-correlation arithmetic and rendered Matplotlib artist values compared with validated Phase 6\u20139 outputs",
+  "weekly_points": 145,
+  "weekly_change_bars": 144,
+  "categories": 14,
+  "category_80pct_count": 5,
+  "category_80pct_share": 81.39969321034145,
+  "center_bars": 10,
+  "promotion": {
+    "email": {
+      "contexts": 2482,
+      "reference_n": 299781,
+      "flagged_n": 36089,
+      "reference_mean": 214.24541310185353,
+      "flagged_mean": 621.7657387959248,
+      "outside_comparison_rows": 120678,
+      "outside_comparison_orders": 29524352
+    },
+    "homepage": {
+      "contexts": 2432,
+      "reference_n": 282271,
+      "flagged_n": 48451,
+      "reference_mean": 244.84290878296213,
+      "flagged_mean": 633.8145873321766,
+      "outside_comparison_rows": 125826,
+      "outside_comparison_orders": 19962960
+    }
+  },
+  "spearman_rho": 0.12181339880018345,
+  "discount_density_rows": 456548,
+  "negative_discounts_preserved": 116101,
+  "inventory_meals_checked": 51,
+  "inventory_png": "unchanged",
+  "pngs": {
+    "weekly": {
+      "path": "reports/figures/weekly_demand.png",
+      "width": 2160,
+      "height": 1260,
+      "sha256": "7a32bb4a9ffe238f48c4fa1b4246b44161184ea5c9f53f4bbb6d44afd5036b9d"
+    },
+    "category": {
+      "path": "reports/figures/category_pareto.png",
+      "width": 2340,
+      "height": 1080,
+      "sha256": "398e9d6a6f059dbbff6b3e36ab8565adc2601d6862d2498ee99cec2b0d1c4086"
+    },
+    "centers": {
+      "path": "reports/figures/center_demand.png",
+      "width": 1980,
+      "height": 1080,
+      "sha256": "a7719b6612f9bfe26fb56214a9e8deef518387056ee9991ea37a8f18cc7d5ec9"
+    },
+    "promotion": {
+      "path": "reports/figures/promotion_comparison.png",
+      "width": 2250,
+      "height": 1260,
+      "sha256": "226666732b8fca99323557b4465fc5698358ae00ab2b04dfb6e5914db2aa7bba"
+    },
+    "discount": {
+      "path": "reports/figures/discount_demand.png",
+      "width": 2160,
+      "height": 1350,
+      "sha256": "217381f38de20d179fa5c047d46e335e6b2459c0efb2874e9efd9e7c03092eb5"
+    },
+    "inventory": {
+      "path": "reports/figures/demand_volume_volatility.png",
+      "width": 2040,
+      "height": 1190,
+      "sha256": "026202acb8bdf25cc08ced2d2bc01212c57dc443e284b8fbe8f0bba966a29750"
+    }
+  },
+  "raw_data": "all four hashes unchanged",
+  "tests_source_notebooks_dependencies": "unchanged",
+  "full_suite_rerun": false,
+  "phase13": "not started",
+  "raw_sha256_before": {
+    "fulfilment_center_info.csv": "c874f74fa392b2c4dd24a167f32a5bee68a444b8bf151acf295cd5d66aa0517f",
+    "meal_info.csv": "9d8045af391c492f531c928d7f3d58581c80d0594776d1f4e53c8b29bbff8f75",
+    "test.csv": "71a929bf2f043bf98748acb9d274258fe4c68c19592be1e26aca7dc1f1c8eda5",
+    "train.csv": "a2ed2d7c6905d63a9361d8dd35bc06c8a597831f7185644e0f33ad7bfe20cc81"
+  },
+  "raw_sha256_after": {
+    "fulfilment_center_info.csv": "c874f74fa392b2c4dd24a167f32a5bee68a444b8bf151acf295cd5d66aa0517f",
+    "meal_info.csv": "9d8045af391c492f531c928d7f3d58581c80d0594776d1f4e53c8b29bbff8f75",
+    "test.csv": "71a929bf2f043bf98748acb9d274258fe4c68c19592be1e26aca7dc1f1c8eda5",
+    "train.csv": "a2ed2d7c6905d63a9361d8dd35bc06c8a597831f7185644e0f33ad7bfe20cc81"
+  },
+  "matches_phase1_inventory": true,
+  "visual_review": {
+    "status": "passed",
+    "method": "Reviewed all six existing figures before export; opened every final PNG, corrected layout issues and inspected corrected exports; verified final file hashes against numerical-validation manifest",
+    "all_six_pngs_inspected": true,
+    "issues_corrected": [
+      "Removed overlapping old center title",
+      "Moved category callout off cumulative line",
+      "Used flag-specific promotion-state labels",
+      "Replaced exponent colorbar ticks with plain observation counts"
+    ]
+  },
+  "resolved_numeric_issue": "Direct floating-point discounts perturbed tied ranks (rho 0.12181341116384894). Export now reuses Phase 7 Decimal discount logic; independent Decimal/rank calculation agrees with validated Phase 8 rho 0.12181339880018344.",
+  "final_documentation_checks": {
+    "links": "passed",
+    "six_canonical_pngs": "passed",
+    "no_duplicate_final_exports": true,
+    "raw_source_and_notebooks_reconfirmed": "unchanged",
+    "plan": "unchanged",
+    "full_suite": "not rerun",
+    "commit_push": "not performed"
+  }
+}

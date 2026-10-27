@@ -1,0 +1,171 @@
+{
+  "repo": "K-Dense-AI/scientific-agent-skills",
+  "revision": "5f2bc0341354fd5590aef76a533ada1e1e5b4e62",
+  "files": [
+    {
+      "path": "LICENSE.md",
+      "git_blob": "eb246475fd5a66b9bb56176f3a718984632dd98d",
+      "sha256": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/SKILL.md",
+      "git_blob": "c461f99dea057872298ce6f04e7c090a83d80d01",
+      "sha256": "955c4cefa49106dd03b55cbd62603bab2d2fb678e627dd452ba62040c7128484"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/assets/report_template.md",
+      "git_blob": "cf651d8d360f702230d03c124a2ff0f5b2e2e97c",
+      "sha256": "c6cd0644dbefeb64c77e84935509f52a92d45256daf2cd4be84012e99e4d7d44"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/references/bioinformatics_genomics_formats.md",
+      "git_blob": "c82fb3679a4e7db3be07bf11c98666166e9b4605",
+      "sha256": "b3594673cbe22e29fd5bc2681c1b53d4f8b02b48ff17fc9ffaf5a09d1d885be3"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/references/chemistry_molecular_formats.md",
+      "git_blob": "40d5dff9437c596e79bf53d98ce5135e8d1bec49",
+      "sha256": "3ff937541ebf0396d4c2304016cebc42d405110300df7379f59c40953fc8ed41"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/references/general_scientific_formats.md",
+      "git_blob": "1fcfd35ac18b2caa932ca2009b987ae0b1261550",
+      "sha256": "42bcf3389bbd78e426dd41139208517f3f78bdc17e068a1eb3a984d2f2487320"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/references/microscopy_imaging_formats.md",
+      "git_blob": "4159a6bd6aaeddbc5147b9e71ade65359fce13b2",
+      "sha256": "c96bb7291ded320a106800c1132191683aa3028f2240c5fcf954079f1a26c382"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/references/proteomics_metabolomics_formats.md",
+      "git_blob": "f04246379bca90d2a8bf0e27633da55dfd276596",
+      "sha256": "66d9493fe14c717f5e8e60500e8fa7bfe1f619084e23b643a767f0952a35efd7"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/references/spectroscopy_analytical_formats.md",
+      "git_blob": "429ddc84592a6deee21c13b69d6ae16eefa972d3",
+      "sha256": "102a68c212ef5447815c889cf06668f3cb5bd8644f018354d6e98d1a15101a0f"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/scripts/__init__.py",
+      "git_blob": "7fb9dd8fa120dd2d00eb2be0c5a4c1c4349c908a",
+      "sha256": "87539288ce5d4caf24fc9fca14e5d70c41730c9d4285106ac4db0c4b5cefd60c"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/scripts/_capabilities.py",
+      "git_blob": "9aa1327f23a58324baabb777c98a01b577787fa1",
+      "sha256": "93fd42bcc6940db0a6cad364dab42a52f0867e782f7e93c9b27c4185249edc06"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/scripts/_common.py",
+      "git_blob": "d098fc4e0acf3a0f67c8a4f6596ba69e29388b1b",
+      "sha256": "f363af255cc78ea63864e0da9f679f57a9e71efd36b6813332f3d2c419b30d51"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/scripts/_structured.py",
+      "git_blob": "714ec59a5d187359c0a329c3d81b5b3196af9ee9",
+      "sha256": "8cb23c8552339acc926f4dc84e1ec032c79152515098e1fd97f2326b84b4ead9"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/scripts/_tabular.py",
+      "git_blob": "5311d1a9aef4995210442792e6a75221e8ad60f1",
+      "sha256": "5d1db825890dd035c30e51ac1c11aee56e1e1dca6ffd238ee87ae7d51d8df2f0"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/scripts/capability_manifest.py",
+      "git_blob": "a1ee36326ea6889b38428714283ce2f4952db461",
+      "sha256": "1e52e1db668ebce919751a75b53ad959c36749e4b1695f59d8ac2d6c8eda4abf"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/scripts/distribution_sensitivity.py",
+      "git_blob": "f8db91f4b7391152ae2b808387d67543bf52bb38",
+      "sha256": "ca6e9f3dd59cfb382b1ff0874e709933c136ec942085a0437d4000bbf7f1f3c8"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/scripts/eda_analyzer.py",
+      "git_blob": "40781abbc7879354c3430fc6f35ebad2331f195e",
+      "sha256": "6532b28ad3f28dd9f58acecb54361c8271d2755584a54ecb0be34da74d1e5d20"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/scripts/image_inspector.py",
+      "git_blob": "a051fd39b64f3d511e3b764eda78b9f72d776db4",
+      "sha256": "79c21b35d01376929ff0edf26a3bb25923b9e75458c586e0f5721cec356fe639"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/scripts/missingness_leakage_audit.py",
+      "git_blob": "af3f1e98588547674dbfc6bc56644fe749b747c8",
+      "sha256": "28458714e80ee31db636c0265ba21e1623ba27816d31e236fdc9b873a5b78ffc"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/scripts/report_scaffold.py",
+      "git_blob": "a816e5f422078b7fddbe6bd4c465422c9a5ea651",
+      "sha256": "4d745592384bfceb0ec7384eecfc5e8ba49ebfa4ec55be75a99ce7c7e102f60b"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/scripts/sequence_inspector.py",
+      "git_blob": "66e985e15ef369ba26cbdd65cc2a6ec4460d7a0c",
+      "sha256": "11ca2fa3a0d660192631b9b562f362b0fd120c9e54639bfb049c600c6920be28"
+    },
+    {
+      "path": "skills/exploratory-data-analysis/scripts/tabular_profile.py",
+      "git_blob": "874ef86b871eb72b8f95a87cfc4cad29f72be148",
+      "sha256": "78cd139292c18e31d17de882762948db7b51fdc3278546f994270a287d0149db"
+    },
+    {
+      "path": "skills/scikit-learn/SKILL.md",
+      "git_blob": "9e26cff8bd282c523b645719c817c1415e0ddb3f",
+      "sha256": "a1765797d072ab40094522abe68fb04505d0881f66b7dfceeb8582422dbe488d"
+    },
+    {
+      "path": "skills/scikit-learn/references/common_workflows.md",
+      "git_blob": "aaa5b03bf7cf5c594563ed2088c917388a79ac1e",
+      "sha256": "dfe19c80358acb5f418a21cea4de3b7e83733481441f3c76d0a2ead4420261de"
+    },
+    {
+      "path": "skills/scikit-learn/references/core_capabilities.md",
+      "git_blob": "2af06ddb50e73d02e137e523dc5bbd45a0f02e99",
+      "sha256": "c869d9c207fcfc345207d397021a289f3820492ddf0fcd0b3a56a336bd0e1453"
+    },
+    {
+      "path": "skills/scikit-learn/references/model_evaluation.md",
+      "git_blob": "029028aebaca4e2459a9fb2f088f57784a67d46b",
+      "sha256": "e6f581c0ce2abffaac2f0bafc1a7bfbe86ec18f8969c6e9b91cc732a12a5fea5"
+    },
+    {
+      "path": "skills/scikit-learn/references/pipelines_and_composition.md",
+      "git_blob": "e12dd329aaf34c4474def8df80971bc6d4fbe001",
+      "sha256": "a1810cd67dc9141d962fa1972e11b06be6bd437213e10a563e5ec4256fb274a9"
+    },
+    {
+      "path": "skills/scikit-learn/references/preprocessing.md",
+      "git_blob": "35ff7e8558bb7a0ad9cd870d1d303fc3908f0d6c",
+      "sha256": "098506f0ca83e57d0c7cccd166164d025552ad7310b79d1010f5ff34e1cc4818"
+    },
+    {
+      "path": "skills/scikit-learn/references/quick_reference.md",
+      "git_blob": "f899eaeb382d860424a20adb13895750394bcf39",
+      "sha256": "5401b75fdaa10bf393b024f3c559631011c7be233d2313da37a3f27d7389659a"
+    },
+    {
+      "path": "skills/scikit-learn/references/supervised_learning.md",
+      "git_blob": "758728c3b29aa49beed9d1ea5ebc0965d7d26aea",
+      "sha256": "d4e5911d175c3a349dd42e33c984b05cdafce230f264b6774996d0eeef36608a"
+    },
+    {
+      "path": "skills/scikit-learn/references/unsupervised_learning.md",
+      "git_blob": "75c06cfbbbd28535411a8214dc2168db0e39447d",
+      "sha256": "cb476ef499fe35ee2c0416fdc31abad42384ac0110f6d3932901e99b039ae1b1"
+    },
+    {
+      "path": "skills/scikit-learn/scripts/classification_pipeline.py",
+      "git_blob": "32f00ab59488c4e6ff6aedbf603c557011a03c4f",
+      "sha256": "46abbb2b11095147cc31314405910b211c313d142f2480599f8508d47e5809f3"
+    },
+    {
+      "path": "skills/scikit-learn/scripts/clustering_analysis.py",
+      "git_blob": "9edcac0e3ffa2fb8b8af709c1f2ce233f8a32c8f",
+      "sha256": "5d1f962a70e049907a39a75cd7a130000a5d3e3de5a4fa4889d07f007c052a17"
+    }
+  ]
+}

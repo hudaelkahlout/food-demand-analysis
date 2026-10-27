@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "independent_method": "SQLite meal sums/counts, sample variance from sum of squares, 26th-order-statistic medians, independently assigned quadrants",
+  "meals_verified": 51,
+  "phase7_cvs_reused_exactly": true,
+  "source_rows_conserved": 456548,
+  "orders_conserved": 119557485,
+  "segment_counts": {
+    "high volume / low volatility": 12,
+    "high volume / high volatility": 14,
+    "low volume / low volatility": 13,
+    "low volume / high volatility": 12
+  },
+  "priority_order_verified": true,
+  "notebook_cells": 16,
+  "notebook_errors": 0,
+  "embedded_images": 6,
+  "volume_volatility_png": "verified",
+  "raw_and_phase5_input_hashes": "unchanged",
+  "phase10_notebook": "absent"
+}

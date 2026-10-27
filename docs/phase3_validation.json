@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "selected_skills": [
+    "exploratory-data-analysis",
+    "scikit-learn"
+  ],
+  "upstream_files_verified": 32,
+  "python_scripts_syntax_checked": 15,
+  "skill_local_links_checked": 7,
+  "eda_synthetic_checks": [
+    "manifest",
+    "three-row profile",
+    "two-row cap disclosed",
+    "out-of-root input rejected",
+    "fixture unchanged"
+  ],
+  "scikit_learn_guidance_check": "passed",
+  "scikit_learn_runtime_check": {
+    "scikit_learn": "1.9.1",
+    "api_imports": "passed",
+    "synthetic_split_and_mae": "passed",
+    "model_fitting": "not performed"
+  },
+  "raw_dataset_hashes": "all four match Phase 1",
+  "phase4_custom_skills": "absent"
+}

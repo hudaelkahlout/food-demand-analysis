@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "independent_sqlite_aggregates": [
+    "weekly",
+    "categories",
+    "meals",
+    "centers",
+    "center_types"
+  ],
+  "threshold_crossing_80pct": "passed",
+  "center_week_denominators": "passed",
+  "notebook_code_cells": 9,
+  "notebook_error_outputs": 0,
+  "embedded_figures": 5,
+  "skill_scan_rows": 456548,
+  "skill_row_truncation": false,
+  "raw_and_phase5_input_hashes": "unchanged",
+  "final_report_figures": "not created"
+}

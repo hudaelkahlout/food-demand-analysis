@@ -1,0 +1,75 @@
+test_anomalies_preserved_and_loader_does_not_write_source (test_data_preparation.PreparationTests.test_anomalies_preserved_and_loader_does_not_write_source) ... ok
+test_coverage_distinguishes_internal_and_boundary_absence (test_data_preparation.PreparationTests.test_coverage_distinguishes_internal_and_boundary_absence) ... ok
+test_duplicate_lookup_rejected_before_expansion (test_data_preparation.PreparationTests.test_duplicate_lookup_rejected_before_expansion) ... ok
+test_malformed_row_rejected (test_data_preparation.PreparationTests.test_malformed_row_rejected) ... ok
+test_many_to_one_preserves_each_row_and_total (test_data_preparation.PreparationTests.test_many_to_one_preserves_each_row_and_total) ... ok
+test_missing_and_different_duplicate_definitions (test_data_preparation.PreparationTests.test_missing_and_different_duplicate_definitions) ... ok
+test_missing_join_key_rejected (test_data_preparation.PreparationTests.test_missing_join_key_rejected) ... ok
+test_overlapping_nonkey_column_rejected (test_data_preparation.PreparationTests.test_overlapping_nonkey_column_rejected) ... ok
+test_quantile_interpolation_and_constant_series (test_data_preparation.PreparationTests.test_quantile_interpolation_and_constant_series) ... ok
+test_unmatched_key_rejected (test_data_preparation.PreparationTests.test_unmatched_key_rejected) ... ok
+test_center_week_is_sum_of_meals_and_no_zero_fill (test_demand_analysis.AnalysisTests.test_center_week_is_sum_of_meals_and_no_zero_fill) ... ok
+test_changes_do_not_fill_or_bridge_missing_week (test_demand_analysis.AnalysisTests.test_changes_do_not_fill_or_bridge_missing_week) ... ok
+test_conflicting_lookup_attribute_rejected (test_demand_analysis.AnalysisTests.test_conflicting_lookup_attribute_rejected) ... ok
+test_duplicate_observation_rejected (test_demand_analysis.AnalysisTests.test_duplicate_observation_rejected) ... ok
+test_exact_threshold_and_deterministic_ties (test_demand_analysis.AnalysisTests.test_exact_threshold_and_deterministic_ties) ... ok
+test_no_record_and_negative_demand_rejected (test_demand_analysis.AnalysisTests.test_no_record_and_negative_demand_rejected) ... ok
+test_threshold_includes_crossing_group (test_demand_analysis.AnalysisTests.test_threshold_includes_crossing_group) ... ok
+test_type_denominator_is_observed_center_weeks (test_demand_analysis.AnalysisTests.test_type_denominator_is_observed_center_weeks) ... ok
+test_undefined_or_invalid_concentration_rejected (test_demand_analysis.AnalysisTests.test_undefined_or_invalid_concentration_rejected) ... ok
+test_zero_denominator_is_unavailable (test_demand_analysis.AnalysisTests.test_zero_denominator_is_unavailable) ... ok
+test_current_future_target_invariance (test_forecasting.ForecastTests.test_current_future_target_invariance) ... ok
+test_exact_week_and_missing_not_zero (test_forecasting.ForecastTests.test_exact_week_and_missing_not_zero) ... ok
+test_fallback_without_zero (test_forecasting.ForecastTests.test_fallback_without_zero) ... ok
+test_finite_nonnegative (test_forecasting.ForecastTests.test_finite_nonnegative) ... ok
+test_forest_determinism (test_forecasting.ForecastTests.test_forest_determinism) ... E:\food-demand-analysis\.venv\Lib\site-packages\sklearn\ensemble\_bootstrap.py:64: UserWarning: Using the fractional value max_samples=0.35 when the number of samples is 15 results in a low number (5) of bootstrap samples. We recommend passing `max_samples` as an integer instead.
+  warn(
+E:\food-demand-analysis\.venv\Lib\site-packages\sklearn\ensemble\_bootstrap.py:64: UserWarning: Using the fractional value max_samples=0.35 when the number of samples is 15 results in a low number (5) of bootstrap samples. We recommend passing `max_samples` as an integer instead.
+  warn(
+ok
+test_invalid_denominator_is_missing (test_forecasting.ForecastTests.test_invalid_denominator_is_missing) ... ok
+test_mae (test_forecasting.ForecastTests.test_mae) ... ok
+test_multiseries_alignment_and_recursive_updates (test_forecasting.ForecastTests.test_multiseries_alignment_and_recursive_updates) ... ok
+test_no_target_or_id_feature (test_forecasting.ForecastTests.test_no_target_or_id_feature) ... ok
+test_order_and_overlap (test_forecasting.ForecastTests.test_order_and_overlap) ... ok
+test_pipeline_training_only_and_unknown_category (test_forecasting.ForecastTests.test_pipeline_training_only_and_unknown_category) ... ok
+test_recursive_ignores_holdout_targets (test_forecasting.ForecastTests.test_recursive_ignores_holdout_targets) ... ok
+test_rolling_excludes_current_and_cross_series (test_forecasting.ForecastTests.test_rolling_excludes_current_and_cross_series) ... ok
+test_split (test_forecasting.ForecastTests.test_split) ... ok
+test_validation (test_forecasting.ForecastTests.test_validation) ... ok
+test_all_four_quadrants_and_conservation (test_inventory_analysis.InventoryTests.test_all_four_quadrants_and_conservation) ... ok
+test_duplicate_keys_and_invalid_cutoffs_rejected (test_inventory_analysis.InventoryTests.test_duplicate_keys_and_invalid_cutoffs_rejected) ... ok
+test_high_cv_alone_does_not_get_priority (test_inventory_analysis.InventoryTests.test_high_cv_alone_does_not_get_priority) ... ok
+test_input_unchanged_and_no_week_imputation (test_inventory_analysis.InventoryTests.test_input_unchanged_and_no_week_imputation) ... ok
+test_invalid_or_undefined_metrics_rejected (test_inventory_analysis.InventoryTests.test_invalid_or_undefined_metrics_rejected) ... ok
+test_medians_and_inclusive_boundary (test_inventory_analysis.InventoryTests.test_medians_and_inclusive_boundary) ... ok
+test_priority_order_is_volume_then_cv_then_id (test_inventory_analysis.InventoryTests.test_priority_order_is_volume_then_cv_then_id) ... ok
+test_tied_medians_are_not_artificially_split (test_inventory_analysis.InventoryTests.test_tied_medians_are_not_artificially_split) ... ok
+test_cv_invalid_values_rejected (test_kpis.KpiTests.test_cv_invalid_values_rejected) ... ok
+test_cv_unavailable_for_empty_single_zero_and_low_mean (test_kpis.KpiTests.test_cv_unavailable_for_empty_single_zero_and_low_mean) ... ok
+test_decimal_revenue_preserves_cents (test_kpis.KpiTests.test_decimal_revenue_preserves_cents) ... ok
+test_discount_mean_is_unweighted_and_includes_negative_rows (test_kpis.KpiTests.test_discount_mean_is_unweighted_and_includes_negative_rows) ... ok
+test_discount_signed_and_not_clamped (test_kpis.KpiTests.test_discount_signed_and_not_clamped) ... ok
+test_duplicate_and_nonbinary_input_rejected (test_kpis.KpiTests.test_duplicate_and_nonbinary_input_rejected) ... ok
+test_empty_input_undefined_ratios (test_kpis.KpiTests.test_empty_input_undefined_ratios) ... ok
+test_grouping_pools_observed_center_meal_weeks (test_kpis.KpiTests.test_grouping_pools_observed_center_meal_weeks) ... ok
+test_invalid_denominators_and_nonfinite_prices (test_kpis.KpiTests.test_invalid_denominators_and_nonfinite_prices) ... ok
+test_invalid_price_coverage_does_not_silently_report_full_revenue (test_kpis.KpiTests.test_invalid_price_coverage_does_not_silently_report_full_revenue) ... ok
+test_sample_cv_definition (test_kpis.KpiTests.test_sample_cv_definition) ... ok
+test_shares_use_observations_not_orders (test_kpis.KpiTests.test_shares_use_observations_not_orders) ... ok
+test_weekly_average_uses_week_totals_not_row_mean (test_kpis.KpiTests.test_weekly_average_uses_week_totals_not_row_mean) ... ok
+test_bootstrap_deterministic_and_constant_effect (test_promotions.PromotionTests.test_bootstrap_deterministic_and_constant_effect) ... ok
+test_context_weighting_not_pooled_volume_weighting (test_promotions.PromotionTests.test_context_weighting_not_pooled_volume_weighting) ... ok
+test_invalid_rank_inputs (test_promotions.PromotionTests.test_invalid_rank_inputs) ... ok
+test_mann_whitney_ties_and_orientation (test_promotions.PromotionTests.test_mann_whitney_ties_and_orientation) ... ok
+test_missing_state_and_insufficient_samples_accounted (test_promotions.PromotionTests.test_missing_state_and_insufficient_samples_accounted) ... ok
+test_negative_discount_preserved_in_summaries (test_promotions.PromotionTests.test_negative_discount_preserved_in_summaries) ... ok
+test_nonconsecutive_global_weeks_rejected_for_block_inference (test_promotions.PromotionTests.test_nonconsecutive_global_weeks_rejected_for_block_inference) ... ok
+test_percentage_zero_baseline (test_promotions.PromotionTests.test_percentage_zero_baseline) ... ok
+test_rank_tests_insufficient_or_constant (test_promotions.PromotionTests.test_rank_tests_insufficient_or_constant) ... ok
+test_spearman_rank_direction (test_promotions.PromotionTests.test_spearman_rank_direction) ... ok
+
+----------------------------------------------------------------------
+Ran 66 tests in 2.010s
+
+OK

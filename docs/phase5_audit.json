@@ -1,0 +1,777 @@
+{
+  "phase": 5,
+  "python": "3.11.4",
+  "sqlite": "3.42.0",
+  "quantile_method": "linear interpolation at (n-1)*p; full-data audit quantiles are exact",
+  "raw_sha256_before": {
+    "train.csv": "a2ed2d7c6905d63a9361d8dd35bc06c8a597831f7185644e0f33ad7bfe20cc81",
+    "test.csv": "71a929bf2f043bf98748acb9d274258fe4c68c19592be1e26aca7dc1f1c8eda5",
+    "meal_info.csv": "9d8045af391c492f531c928d7f3d58581c80d0594776d1f4e53c8b29bbff8f75",
+    "fulfilment_center_info.csv": "c874f74fa392b2c4dd24a167f32a5bee68a444b8bf151acf295cd5d66aa0517f"
+  },
+  "input_audits": {
+    "train": {
+      "rows": 456548,
+      "num_orders_total": 119557485,
+      "unique_id": 456548,
+      "unique_meal_id": 51,
+      "unique_center_id": 77,
+      "unique_logical_keys": 456548,
+      "columns": 9,
+      "missing": {
+        "id": {
+          "count": 0,
+          "percent": 0.0,
+          "decision": "retain; no imputation"
+        },
+        "week": {
+          "count": 0,
+          "percent": 0.0,
+          "decision": "retain; no imputation"
+        },
+        "center_id": {
+          "count": 0,
+          "percent": 0.0,
+          "decision": "retain; no imputation"
+        },
+        "meal_id": {
+          "count": 0,
+          "percent": 0.0,
+          "decision": "retain; no imputation"
+        },
+        "checkout_price": {
+          "count": 0,
+          "percent": 0.0,
+          "decision": "retain; no imputation"
+        },
+        "base_price": {
+          "count": 0,
+          "percent": 0.0,
+          "decision": "retain; no imputation"
+        },
+        "emailer_for_promotion": {
+          "count": 0,
+          "percent": 0.0,
+          "decision": "retain; no imputation"
+        },
+        "homepage_featured": {
+          "count": 0,
+          "percent": 0.0,
+          "decision": "retain; no imputation"
+        },
+        "num_orders": {
+          "count": 0,
+          "percent": 0.0,
+          "decision": "retain; no imputation"
+        }
+      },
+      "exact_duplicate_rows_beyond_first": 0,
+      "logical_key": [
+        "week",
+        "center_id",
+        "meal_id"
+      ],
+      "logical_duplicate_rows_beyond_first": 0,
+      "primary_key_duplicate_rows_beyond_first": 0
+    },
+    "test": {
+      "rows": 32573,
+      "num_orders_total": null,
+      "unique_id": 32573,
+      "unique_meal_id": 51,
+      "unique_center_id": 77,
+      "unique_logical_keys": 32573,
+      "columns": 8,
+      "missing": {
+        "id": {
+          "count": 0,
+          "percent": 0.0,
+          "decision": "retain; no imputation"
+        },
+        "week": {
+          "count": 0,
+          "percent": 0.0,
+          "decision": "retain; no imputation"
+        },
+        "center_id": {
+          "count": 0,
+          "percent": 0.0,
+          "decision": "retain; no imputation"
+        },
+        "meal_id": {
+          "count": 0,
+          "percent": 0.0,
+          "decision": "retain; no imputation"
+        },
+        "checkout_price": {
+          "count": 0,
+          "percent": 0.0,
+          "decision": "retain; no imputation"
+        },
+        "base_price": {
+          "count": 0,
+          "percent": 0.0,
+          "decision": "retain; no imputation"
+        },
+        "emailer_for_promotion": {
+          "count": 0,
+          "percent": 0.0,
+          "decision": "retain; no imputation"
+        },
+        "homepage_featured": {
+          "count": 0,
+          "percent": 0.0,
+          "decision": "retain; no imputation"
+        }
+      },
+      "exact_duplicate_rows_beyond_first": 0,
+      "logical_key": [
+        "week",
+        "center_id",
+        "meal_id"
+      ],
+      "logical_duplicate_rows_beyond_first": 0,
+      "primary_key_duplicate_rows_beyond_first": 0
+    },
+    "meal_info": {
+      "rows": 51,
+      "num_orders_total": null,
+      "unique_meal_id": 51,
+      "columns": 3,
+      "missing": {
+        "meal_id": {
+          "count": 0,
+          "percent": 0.0,
+          "decision": "retain; no imputation"
+        },
+        "category": {
+          "count": 0,
+          "percent": 0.0,
+          "decision": "retain; no imputation"
+        },
+        "cuisine": {
+          "count": 0,
+          "percent": 0.0,
+          "decision": "retain; no imputation"
+        }
+      },
+      "exact_duplicate_rows_beyond_first": 0,
+      "logical_key": [
+        "meal_id"
+      ],
+      "logical_duplicate_rows_beyond_first": 0,
+      "primary_key_duplicate_rows_beyond_first": 0
+    },
+    "fulfilment_center_info": {
+      "rows": 77,
+      "num_orders_total": null,
+      "unique_center_id": 77,
+      "columns": 5,
+      "missing": {
+        "center_id": {
+          "count": 0,
+          "percent": 0.0,
+          "decision": "retain; no imputation"
+        },
+        "city_code": {
+          "count": 0,
+          "percent": 0.0,
+          "decision": "retain; no imputation"
+        },
+        "region_code": {
+          "count": 0,
+          "percent": 0.0,
+          "decision": "retain; no imputation"
+        },
+        "center_type": {
+          "count": 0,
+          "percent": 0.0,
+          "decision": "retain; no imputation"
+        },
+        "op_area": {
+          "count": 0,
+          "percent": 0.0,
+          "decision": "retain; no imputation"
+        }
+      },
+      "exact_duplicate_rows_beyond_first": 0,
+      "logical_key": [
+        "center_id"
+      ],
+      "logical_duplicate_rows_beyond_first": 0,
+      "primary_key_duplicate_rows_beyond_first": 0
+    }
+  },
+  "merges": [
+    {
+      "left": "train",
+      "right": "meal_info",
+      "key": "meal_id",
+      "output": "train_meal",
+      "cardinality": "many-to-one",
+      "before": {
+        "rows": 456548,
+        "num_orders_total": 119557485,
+        "unique_id": 456548,
+        "unique_meal_id": 51,
+        "unique_center_id": 77,
+        "unique_logical_keys": 456548
+      },
+      "after": {
+        "rows": 456548,
+        "num_orders_total": 119557485,
+        "unique_id": 456548,
+        "unique_meal_id": 51,
+        "unique_center_id": 77,
+        "unique_logical_keys": 456548
+      },
+      "lookup": {
+        "rows": 51,
+        "num_orders_total": null,
+        "unique_meal_id": 51
+      },
+      "unmatched_rows_before": 0,
+      "unmatched_keys_before": 0,
+      "unmatched_rows_after": 0,
+      "unmatched_keys_after": 0,
+      "duplicate_expansion_rows": 0,
+      "validation": "passed"
+    },
+    {
+      "left": "train_meal",
+      "right": "fulfilment_center_info",
+      "key": "center_id",
+      "output": "train_prepared",
+      "cardinality": "many-to-one",
+      "before": {
+        "rows": 456548,
+        "num_orders_total": 119557485,
+        "unique_id": 456548,
+        "unique_meal_id": 51,
+        "unique_center_id": 77,
+        "unique_logical_keys": 456548
+      },
+      "after": {
+        "rows": 456548,
+        "num_orders_total": 119557485,
+        "unique_id": 456548,
+        "unique_meal_id": 51,
+        "unique_center_id": 77,
+        "unique_logical_keys": 456548
+      },
+      "lookup": {
+        "rows": 77,
+        "num_orders_total": null,
+        "unique_center_id": 77
+      },
+      "unmatched_rows_before": 0,
+      "unmatched_keys_before": 0,
+      "unmatched_rows_after": 0,
+      "unmatched_keys_after": 0,
+      "duplicate_expansion_rows": 0,
+      "validation": "passed"
+    }
+  ],
+  "prepared_audit": {
+    "rows": 456548,
+    "num_orders_total": 119557485,
+    "unique_id": 456548,
+    "unique_meal_id": 51,
+    "unique_center_id": 77,
+    "unique_logical_keys": 456548,
+    "columns": 15,
+    "missing": {
+      "id": {
+        "count": 0,
+        "percent": 0.0,
+        "decision": "retain; no imputation"
+      },
+      "week": {
+        "count": 0,
+        "percent": 0.0,
+        "decision": "retain; no imputation"
+      },
+      "center_id": {
+        "count": 0,
+        "percent": 0.0,
+        "decision": "retain; no imputation"
+      },
+      "meal_id": {
+        "count": 0,
+        "percent": 0.0,
+        "decision": "retain; no imputation"
+      },
+      "checkout_price": {
+        "count": 0,
+        "percent": 0.0,
+        "decision": "retain; no imputation"
+      },
+      "base_price": {
+        "count": 0,
+        "percent": 0.0,
+        "decision": "retain; no imputation"
+      },
+      "emailer_for_promotion": {
+        "count": 0,
+        "percent": 0.0,
+        "decision": "retain; no imputation"
+      },
+      "homepage_featured": {
+        "count": 0,
+        "percent": 0.0,
+        "decision": "retain; no imputation"
+      },
+      "num_orders": {
+        "count": 0,
+        "percent": 0.0,
+        "decision": "retain; no imputation"
+      },
+      "category": {
+        "count": 0,
+        "percent": 0.0,
+        "decision": "retain; no imputation"
+      },
+      "cuisine": {
+        "count": 0,
+        "percent": 0.0,
+        "decision": "retain; no imputation"
+      },
+      "city_code": {
+        "count": 0,
+        "percent": 0.0,
+        "decision": "retain; no imputation"
+      },
+      "region_code": {
+        "count": 0,
+        "percent": 0.0,
+        "decision": "retain; no imputation"
+      },
+      "center_type": {
+        "count": 0,
+        "percent": 0.0,
+        "decision": "retain; no imputation"
+      },
+      "op_area": {
+        "count": 0,
+        "percent": 0.0,
+        "decision": "retain; no imputation"
+      }
+    },
+    "exact_duplicate_rows_beyond_first": 0,
+    "logical_key": [
+      "week",
+      "center_id",
+      "meal_id"
+    ],
+    "logical_duplicate_rows_beyond_first": 0,
+    "primary_key_duplicate_rows_beyond_first": 0
+  },
+  "quality": {
+    "pricing": {
+      "checkout_above_base_rows": 116101,
+      "checkout_above_base_order_total": 26320670,
+      "other_rows": 340447,
+      "other_order_total": 93236815,
+      "affected_series": 3593,
+      "affected_weeks": 145,
+      "positive_difference_distribution": {
+        "count": 116101,
+        "min": 0.03,
+        "q01": 1.0,
+        "q25": 1.0,
+        "median": 1.0,
+        "q75": 2.0,
+        "q95": 2.0,
+        "q99": 20.31,
+        "q999": 67.9,
+        "max": 185.3
+      },
+      "positive_difference_at_most_one_price_unit": 74621,
+      "positive_difference_exactly_one_price_unit": 73687,
+      "above_base_with_either_promotion_rows": 7896,
+      "nonpositive_price_rows": 0,
+      "decision": "retain all prices unchanged; cause unverified"
+    },
+    "orders": {
+      "distribution": {
+        "count": 456548,
+        "min": 13,
+        "q01": 13.0,
+        "q25": 54.0,
+        "median": 136.0,
+        "q75": 324.0,
+        "q95": 878.0,
+        "q99": 1796.0,
+        "q999": 4137.888999999734,
+        "max": 24299
+      },
+      "global_iqr_fences": [
+        -351.0,
+        729.0
+      ],
+      "global_iqr_outlier_rows": 32937,
+      "lower_fence_outlier_rows": 0,
+      "global_outlier_orders": 42374283,
+      "other_orders": 77183202,
+      "other_rows": 423611,
+      "affected_series": 1472,
+      "within_series_iqr_outlier_rows": 26158,
+      "global_and_within_series_outlier_rows": 10532,
+      "top10_context": [
+        {
+          "orders": 24299,
+          "series_observations": 145,
+          "series_median": 1391.0,
+          "series_q99": 14848.920000000002,
+          "series_rows_at_least_half_this_value": 3,
+          "either_promotion": true
+        },
+        {
+          "orders": 15336,
+          "series_observations": 145,
+          "series_median": 1391.0,
+          "series_q99": 14848.920000000002,
+          "series_rows_at_least_half_this_value": 5,
+          "either_promotion": true
+        },
+        {
+          "orders": 14229,
+          "series_observations": 145,
+          "series_median": 1391.0,
+          "series_q99": 14848.920000000002,
+          "series_rows_at_least_half_this_value": 5,
+          "either_promotion": true
+        },
+        {
+          "orders": 13580,
+          "series_observations": 145,
+          "series_median": 1565.0,
+          "series_q99": 7910.560000000006,
+          "series_rows_at_least_half_this_value": 2,
+          "either_promotion": true
+        },
+        {
+          "orders": 13150,
+          "series_observations": 145,
+          "series_median": 580.0,
+          "series_q99": 9358.080000000002,
+          "series_rows_at_least_half_this_value": 11,
+          "either_promotion": true
+        },
+        {
+          "orders": 12489,
+          "series_observations": 145,
+          "series_median": 663.0,
+          "series_q99": 6538.320000000003,
+          "series_rows_at_least_half_this_value": 2,
+          "either_promotion": true
+        },
+        {
+          "orders": 12327,
+          "series_observations": 145,
+          "series_median": 595.0,
+          "series_q99": 2455.720000000002,
+          "series_rows_at_least_half_this_value": 1,
+          "either_promotion": true
+        },
+        {
+          "orders": 12177,
+          "series_observations": 145,
+          "series_median": 1174.0,
+          "series_q99": 8752.44,
+          "series_rows_at_least_half_this_value": 8,
+          "either_promotion": true
+        },
+        {
+          "orders": 12137,
+          "series_observations": 145,
+          "series_median": 568.0,
+          "series_q99": 10026.68,
+          "series_rows_at_least_half_this_value": 6,
+          "either_promotion": true
+        },
+        {
+          "orders": 11380,
+          "series_observations": 145,
+          "series_median": 420.0,
+          "series_q99": 4289.040000000001,
+          "series_rows_at_least_half_this_value": 1,
+          "either_promotion": true
+        }
+      ],
+      "nonpositive_order_rows": 0,
+      "decision": "retain all orders; fences are descriptive flags, not deletion criteria"
+    },
+    "invalid_promotion_flag_rows": 0,
+    "weeks": {
+      "globally_absent_weeks": [],
+      "observed_week_count": 145,
+      "meal_level": {
+        "observed_groups": 51,
+        "window": [
+          1,
+          145
+        ],
+        "groups_with_any_absence": 6,
+        "groups_with_internal_gaps": 3,
+        "groups_with_leading_absence": 6,
+        "groups_with_trailing_absence": 0,
+        "leading_absent_slots": 209,
+        "internal_absent_slots": 13,
+        "trailing_absent_slots": 0,
+        "longest_internal_gap": 7,
+        "absent_slots_within_observed_groups": 222
+      },
+      "center_meal_level": {
+        "observed_groups": 3597,
+        "window": [
+          1,
+          145
+        ],
+        "groups_with_any_absence": 2350,
+        "groups_with_internal_gaps": 2129,
+        "groups_with_leading_absence": 675,
+        "groups_with_trailing_absence": 329,
+        "leading_absent_slots": 21468,
+        "internal_absent_slots": 40548,
+        "trailing_absent_slots": 3001,
+        "longest_internal_gap": 121,
+        "absent_slots_within_observed_groups": 65017,
+        "never_observed_pairs_in_center_meal_cartesian_product": 330,
+        "slots_in_never_observed_pairs": 47850
+      },
+      "decision": "absence meaning unknown; no inserted weeks and no zero filling"
+    },
+    "retention": {
+      "rows_before": 456548,
+      "rows_after": 456548,
+      "rows_removed": 0,
+      "num_orders_before": 119557485,
+      "num_orders_after": 119557485,
+      "num_orders_removed": 0,
+      "imputed_cells": 0,
+      "price_values_changed": 0,
+      "orders_changed": 0
+    }
+  },
+  "skill_use": {
+    "skill": "exploratory-data-analysis",
+    "commands": [
+      [
+        "python",
+        ".agents\\skills\\exploratory-data-analysis\\scripts\\capability_manifest.py",
+        "inspect",
+        "data/raw/train.csv",
+        "--root",
+        ".",
+        "--output",
+        "data\\processed\\phase5_skill\\train_manifest.json",
+        "--force"
+      ],
+      [
+        "python",
+        ".agents\\skills\\exploratory-data-analysis\\scripts\\tabular_profile.py",
+        "data/raw/train.csv",
+        "--max-rows",
+        "500000",
+        "--root",
+        ".",
+        "--output",
+        "data\\processed\\phase5_skill\\train_profile.json",
+        "--force",
+        "--missing-token",
+        "n/a",
+        "--missing-token",
+        "na",
+        "--missing-token",
+        "nan",
+        "--missing-token",
+        "none",
+        "--missing-token",
+        "null"
+      ],
+      [
+        "python",
+        ".agents\\skills\\exploratory-data-analysis\\scripts\\capability_manifest.py",
+        "inspect",
+        "data/raw/test.csv",
+        "--root",
+        ".",
+        "--output",
+        "data\\processed\\phase5_skill\\test_manifest.json",
+        "--force"
+      ],
+      [
+        "python",
+        ".agents\\skills\\exploratory-data-analysis\\scripts\\tabular_profile.py",
+        "data/raw/test.csv",
+        "--max-rows",
+        "500000",
+        "--root",
+        ".",
+        "--output",
+        "data\\processed\\phase5_skill\\test_profile.json",
+        "--force",
+        "--missing-token",
+        "n/a",
+        "--missing-token",
+        "na",
+        "--missing-token",
+        "nan",
+        "--missing-token",
+        "none",
+        "--missing-token",
+        "null"
+      ],
+      [
+        "python",
+        ".agents\\skills\\exploratory-data-analysis\\scripts\\capability_manifest.py",
+        "inspect",
+        "data/raw/meal_info.csv",
+        "--root",
+        ".",
+        "--output",
+        "data\\processed\\phase5_skill\\meal_info_manifest.json",
+        "--force"
+      ],
+      [
+        "python",
+        ".agents\\skills\\exploratory-data-analysis\\scripts\\tabular_profile.py",
+        "data/raw/meal_info.csv",
+        "--max-rows",
+        "500000",
+        "--root",
+        ".",
+        "--output",
+        "data\\processed\\phase5_skill\\meal_info_profile.json",
+        "--force",
+        "--missing-token",
+        "n/a",
+        "--missing-token",
+        "na",
+        "--missing-token",
+        "nan",
+        "--missing-token",
+        "none",
+        "--missing-token",
+        "null"
+      ],
+      [
+        "python",
+        ".agents\\skills\\exploratory-data-analysis\\scripts\\capability_manifest.py",
+        "inspect",
+        "data/raw/fulfilment_center_info.csv",
+        "--root",
+        ".",
+        "--output",
+        "data\\processed\\phase5_skill\\fulfilment_center_info_manifest.json",
+        "--force"
+      ],
+      [
+        "python",
+        ".agents\\skills\\exploratory-data-analysis\\scripts\\tabular_profile.py",
+        "data/raw/fulfilment_center_info.csv",
+        "--max-rows",
+        "500000",
+        "--root",
+        ".",
+        "--output",
+        "data\\processed\\phase5_skill\\fulfilment_center_info_profile.json",
+        "--force",
+        "--missing-token",
+        "n/a",
+        "--missing-token",
+        "na",
+        "--missing-token",
+        "nan",
+        "--missing-token",
+        "none",
+        "--missing-token",
+        "null"
+      ],
+      [
+        "python",
+        ".agents\\skills\\exploratory-data-analysis\\scripts\\distribution_sensitivity.py",
+        "data/raw/train.csv",
+        "--root",
+        ".",
+        "--max-rows",
+        "500000",
+        "--column",
+        "num_orders",
+        "--output",
+        "data\\processed\\phase5_skill\\train_order_sensitivity.json",
+        "--force"
+      ]
+    ],
+    "scope": "Full CSV row scans; distribution summaries use the skill's bounded numeric sample, not all values.",
+    "distribution_diagnostics": {
+      "audit_type": "distribution_and_outlier_sensitivity",
+      "columns": [
+        {
+          "bounded_numeric_sample_count": 4096,
+          "column_id": "column_3d16d0406b3a677a",
+          "location_and_scale": {
+            "interquartile_range": 271.0,
+            "mean": 257.19189453125,
+            "median": 136.0,
+            "median_absolute_deviation": 106.0,
+            "q1": 54.0,
+            "q3": 325.0,
+            "sample_standard_deviation": 368.74345628047416
+          },
+          "missing_count": 0,
+          "nonnumeric_count": 0,
+          "numeric_count": 456548,
+          "outlier_sensitivity": {
+            "iqr_fence_high": 731.5,
+            "iqr_fence_low": -352.5,
+            "mean_without_iqr_fence_values": 184.84361924686192,
+            "outside_iqr_fence_count_in_sample": 272,
+            "raw_minus_trimmed_mean": 71.2422301017198,
+            "ten_percent_trimmed_mean": 185.9496644295302,
+            "ten_percent_winsorized_mean": 210.8232421875,
+            "values_were_not_deleted_or_modified": true
+          },
+          "sample_is_bounded": true,
+          "transformation_sensitivity": {
+            "candidate": "log1p",
+            "diagnostic_only": true,
+            "fit_on_training_data_only_if_later_adopted": true,
+            "log1p_skewness_moment": -0.053679053139041255,
+            "raw_skewness_moment": 5.115015630189561
+          }
+        }
+      ],
+      "columns_skipped_by_default_limit": 0,
+      "interpretation": [
+        "IQR fences are descriptive flags, not deletion rules.",
+        "Transformation comparisons are exploratory diagnostics, not automatic recommendations.",
+        "No hypothesis tests, p-values, imputations, or causal claims are produced.",
+        "If later tests are run, define the hypothesis family and multiplicity procedure first."
+      ],
+      "numeric_columns_reported": 1,
+      "raw_values_emitted": false,
+      "row_limit_reached": false,
+      "rows_scanned": 456548
+    }
+  },
+  "all_original_train_cells_and_order_preserved": true,
+  "raw_sha256_after": {
+    "train.csv": "a2ed2d7c6905d63a9361d8dd35bc06c8a597831f7185644e0f33ad7bfe20cc81",
+    "test.csv": "71a929bf2f043bf98748acb9d274258fe4c68c19592be1e26aca7dc1f1c8eda5",
+    "meal_info.csv": "9d8045af391c492f531c928d7f3d58581c80d0594776d1f4e53c8b29bbff8f75",
+    "fulfilment_center_info.csv": "c874f74fa392b2c4dd24a167f32a5bee68a444b8bf151acf295cd5d66aa0517f"
+  },
+  "raw_unchanged": true,
+  "outputs": {
+    "train_prepared.csv": {
+      "path": "data/processed/train_prepared.csv",
+      "sha256": "52467bcad7b7c863276d1844bfe8a677cbfd4d6d08256d704e8da1e4a79cf137"
+    },
+    "center_meal_week_coverage.csv": {
+      "path": "data/processed/center_meal_week_coverage.csv",
+      "sha256": "6e7514639fe7c1eb1b7c6b0e2a6422c149c95007d76a3ebfb4e512841e8f25cb"
+    }
+  }
+}
